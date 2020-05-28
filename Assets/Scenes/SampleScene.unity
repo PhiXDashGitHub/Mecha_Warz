@@ -321,6 +321,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852123878}
+  - component: {fileID: 852123881}
+  - component: {fileID: 852123882}
   - component: {fileID: 852123879}
   - component: {fileID: 852123880}
   m_Layer: 0
@@ -381,6 +383,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody2D: {fileID: 852123879}
   speed: 5
+--- !u!114 &852123881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852123877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30842bfa8443d2478fcbdb6dc3cce83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  progressionLevel: 0
+--- !u!114 &852123882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852123877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d6bf691652ff745a5c0e5921ef82f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  maxMagicShield: 0
+  maxShield: 0
+  maxToughness: 0
+  maxEnlightenment: 0
+  fireResistance: 0
+  waterResistance: 0
+  iceResistance: 0
+  electricResistance: 0
+  piercingResistance: 0
+  bludgeoningResistance: 0
+  slashingResistance: 0
+  poisonResistance: 0
 --- !u!1 &2116573734
 GameObject:
   m_ObjectHideFlags: 0
