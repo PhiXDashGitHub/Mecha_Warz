@@ -7,8 +7,8 @@ public class PlayerStats : MonoBehaviour
 {
     PlayerCharacter character;
 
-    public float level;
-    public float progressionLevel;
+    public int level;
+    public int progressionLevel;
 
     void Awake()
     {
@@ -25,8 +25,8 @@ public class PlayerStats : MonoBehaviour
         character.maxHealth = 100 + (level / 2);
         character.maxMagicShield = 100 + (level / 2);
         character.maxShield = 4 + (level / 10);
-        character.maxToughness = (level / 4);
-        character.maxEnlightenment = (level / 4);
+        character.maxToughness = (level / 4) + 10 * progressionLevel;
+        character.maxEnlightenment = (level / 4) + 10 * progressionLevel;
 
         //Character Resistance
         character.fireResistance = progressionLevel / 4;
