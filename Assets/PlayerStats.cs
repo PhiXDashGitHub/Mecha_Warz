@@ -29,13 +29,13 @@ public class PlayerStats : MonoBehaviour
         character.maxEnlightenment = (level / 4) + 10 * progressionLevel;
 
         //Character Resistance
-        character.fireResistance = progressionLevel / 4;
-        character.waterResistance = progressionLevel / 4;
-        character.iceResistance = progressionLevel / 4;
-        character.electricResistance = progressionLevel / 4;
-        character.piercingResistance = progressionLevel / 4;
-        character.bludgeoningResistance = progressionLevel / 4;
-        character.slashingResistance = progressionLevel / 4;
-        character.poisonResistance = progressionLevel / 4;
+        character.fireResistance = progressionLevel / 4.0f;
+        character.waterResistance = progressionLevel / 4.0f;
+        character.iceResistance = progressionLevel / 4.0f;
+        character.electricResistance = progressionLevel / 4.0f;
+        character.piercingResistance = progressionLevel / 4.0f;
+        character.bludgeoningResistance = progressionLevel / 4.0f;
+        character.slashingResistance = progressionLevel / 4.0f;
+        character.poisonResistance = progressionLevel / 4.0f;
     }
 }
