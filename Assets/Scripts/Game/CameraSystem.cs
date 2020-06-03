@@ -13,7 +13,10 @@ public class CameraSystem : MonoBehaviour
     {
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize, 2, bounds.size.y / 2);
 
-        transform.position = Vector3.Slerp(transform.position, target.position, lerpTime * Time.deltaTime);
+        Vector3 tmp = target.position;
+        tmp.z = transform.position.z;
+
+        transform.position = Vector3.Slerp(transform.position, tmp, lerpTime * Time.deltaTime);
 
         Vector3 pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, (-bounds.size.x / 2) + (Camera.main.orthographicSize * 16) / 9, (bounds.size.x / 2) - (Camera.main.orthographicSize * 16) / 9);
