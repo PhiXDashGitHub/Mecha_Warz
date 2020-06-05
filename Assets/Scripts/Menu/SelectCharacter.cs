@@ -10,10 +10,14 @@ public class SelectCharacter : MonoBehaviour
     private string[] charnamestemp;
     private int index;
     public int CharSex;
-    public Sprite[] Charpriv;
+    
+    //Class Names: Basic , Melee , Ranged , Bio , Hybrid , Support
+    private string Class = "Basic";
+
+    public GameObject[] MechDisplay;
     public GameObject CharCreator;
     public GameObject CharName;
-    public GameObject CharDisplay;
+    public GameObject ButtonParent;
 
     public void Start()
     {
@@ -29,19 +33,32 @@ public class SelectCharacter : MonoBehaviour
         {
             for (int i = 0; i < charnamestemp.Length; i++)
             {
-                this.transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = PlayerPrefsX.GetStringArray("CharNames")[i];
-                if (PlayerPrefsX.GetStringArray("CharNames")[i] != "")
+                ButtonParent.transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = PlayerPrefsX.GetStringArray("CharNames")[i];
+                if (charnamestemp[i] != "")
                 {
-                    this.transform.GetChild(i).GetComponent<Image>().sprite = Charpriv[PlayerPrefs.GetInt("CharSex" + PlayerPrefsX.GetStringArray("CharNames")[i])];
+                    MechDisplay[i].SetActive(true);
+
+                    Color col = new Color();
+
+                    col.r = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[0]);
+                    col.g = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[1]);
+                    col.b = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[2]);
+                    col.a = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[3]);
+                    MechDisplay[i].transform.GetChild(0).GetComponent<SkinnedMeshRenderer>().material.color = col;
+
+                    Class = PlayerPrefs.GetString("CharClass"+ PlayerPrefsX.GetStringArray("CharNames")[i]);
                 }
-                
+                else
+                {
+                    ButtonParent.transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = "+";
+                }
             }
         }
         else
         {
-            for(int i = 0; i < this.transform.childCount; i++)
+            for(int i = 0; i < ButtonParent.transform.childCount; i++)
             {
-                this.transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = "+";
+                ButtonParent.transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = "+";
             }
         }
     }
@@ -49,11 +66,11 @@ public class SelectCharacter : MonoBehaviour
     public void Selectcharacter(int pindex)
     {
         index = pindex;
-
         try
         {
             charnamestemp = PlayerPrefsX.GetStringArray("CharNames");
             CharSex = PlayerPrefs.GetInt("CharSex" + charnamestemp[index]);
+            
             if (charnamestemp[index] == "")
             {
                 CreateCharMenu();
@@ -70,9 +87,18 @@ public class SelectCharacter : MonoBehaviour
     public void CreatCharacter()
     {
         string newcharname = CharName.GetComponent<TextMeshProUGUI>().text;
+        for (int i = 0; i< charnamestemp.Length;i ++)
+        {
+            if(newcharname == charnamestemp[i])
+            {
+                newcharname += 1;
+            }
+        }
         charnamestemp[index] = newcharname;
         PlayerPrefsX.SetStringArray("CharNames", charnamestemp);
         PlayerPrefs.SetInt("CharSex" + charnamestemp[index], CharSex);
+        PlayerPrefs.SetString("CharClass" + charnamestemp[index], Class);
+        PlayerPrefs.SetString("CharColor" + charnamestemp[index], CharacterSelect.mechcolor.r + ":" + CharacterSelect.mechcolor.g + ":" + CharacterSelect.mechcolor.b + ":" + CharacterSelect.mechcolor.a);
         StartGame(charnamestemp[index]);
     }
 
@@ -89,9 +115,11 @@ public class SelectCharacter : MonoBehaviour
     public void SetCharSex(int psex)
     {
         CharSex = psex;
-        CharDisplay.GetComponent<Image>().sprite = Charpriv[psex];
     }
-
+    public void SetCharClass(string pClass)
+    {
+        Class = pClass;
+    }
     public void ClearAllCharacters()
     {
         PlayerPrefs.DeleteAll();
