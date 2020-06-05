@@ -7,11 +7,7 @@ using UnityEngine.Tilemaps;
 
 public class MapGenerator : MonoBehaviour
 {
-    public Tilemap tileMap;
-    public TileBase testGround;
-
-    public Transform grid;
-    public BoxCollider2D mapBounds;
+    public Vector2 mapSize;
 
     [Range(10, 1000)]
     public float noiseScale;
@@ -22,10 +18,10 @@ public class MapGenerator : MonoBehaviour
 
     void Start()
     {
-        grid.position = Vector3.right * mapBounds.size.x / 2 + Vector3.up * mapBounds.size.y / 2;
-        tileMap.BoxFill(Vector3Int.CeilToInt(transform.position + Vector3.left * mapBounds.size.x + Vector3.down * mapBounds.size.y), testGround, (int)-mapBounds.size.x, (int)-mapBounds.size.y, (int)mapBounds.size.x, (int)mapBounds.size.y);
+        GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        ground.transform.SetParent(transform);
 
-        AddMapVariation();
+        ground.transform.localScale = new Vector3(mapSize.x, 1, mapSize.y);
     }
 
     Texture2D GenerateNoiseTexture(int width, int height)
@@ -52,27 +48,5 @@ public class MapGenerator : MonoBehaviour
 
         result.Apply();
         return result;
-    }
-
-    public void AddMapVariation()
-    {
-        Texture2D noiseTexture = GenerateNoiseTexture((int)mapBounds.size.x, (int)mapBounds.size.y);
-
-        for (int x = -tileMap.size.x; x < tileMap.size.x; x++)
-        {
-            for (int y = -tileMap.size.y; y < tileMap.size.y; y++)
-            {
-                Vector3Int pos = tileMap.WorldToCell(new Vector3(x, y, 0));
-                tileMap.SetTileFlags(pos, TileFlags.None);
-
-                Color col = tileMap.GetColor(pos);
-                Color.RGBToHSV(col, out float hue, out float sat, out float val);
-
-                val = noiseTexture.GetPixel(x + tileMap.size.x, y + tileMap.size.y).grayscale;
-
-                col = Color.HSVToRGB(hue, sat, val);
-                tileMap.SetColor(pos, col);
-            }
-        }
     }
 }
