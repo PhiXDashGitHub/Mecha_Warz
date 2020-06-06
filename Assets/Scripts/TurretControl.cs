@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurretControl : MonoBehaviour
 {
-    Vector3 mousePos;
+    public static Vector3 mousePos;
 
     void Update()
     {
