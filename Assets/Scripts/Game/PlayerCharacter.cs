@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCharacter : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class PlayerCharacter : MonoBehaviour
     public float slashingResistance;
     public float poisonResistance;
 
+    //Ui
+    public GameObject HealthSlider;
     void Start()
     {
         health = maxHealth;
@@ -35,6 +38,7 @@ public class PlayerCharacter : MonoBehaviour
         StartCoroutine(RegenerateHealth());
         StartCoroutine(RegenerateMagicShield());
         StartCoroutine(RegenerateShield());
+        HealthSlider.GetComponent<Slider>().maxValue = maxHealth;
     }
 
     void Update()
@@ -45,6 +49,8 @@ public class PlayerCharacter : MonoBehaviour
         shield = Mathf.Clamp(shield, 0, 1);
         toughness = Mathf.Clamp(toughness, 0, 25);
         enlightenment = Mathf.Clamp(enlightenment, 0, 25);
+
+        HealthSlider.GetComponent<Slider>().value = health;
     }
 
     IEnumerator RegenerateHealth()
