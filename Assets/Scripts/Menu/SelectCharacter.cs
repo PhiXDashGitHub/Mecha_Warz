@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SelectCharacter : MonoBehaviour
 {
@@ -44,7 +45,12 @@ public class SelectCharacter : MonoBehaviour
                     col.g = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[1]);
                     col.b = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[2]);
                     col.a = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[i]).Split(':')[3]);
-                    MechDisplay[i].transform.GetChild(0).GetComponent<SkinnedMeshRenderer>().material.color = col;
+
+                    var block = new MaterialPropertyBlock();
+
+                    block.SetColor("_BaseColor", col);
+                    MechDisplay[i].transform.GetChild(0).GetComponent<SkinnedMeshRenderer>().SetPropertyBlock(block);
+
 
                     Class = PlayerPrefs.GetString("CharClass"+ PlayerPrefsX.GetStringArray("CharNames")[i]);
                 }
@@ -104,7 +110,7 @@ public class SelectCharacter : MonoBehaviour
 
     public void StartGame(string charname)
     {
-        GameObject game = new GameObject();
+        SceneManager.LoadScene(1);
     }
 
     public void CreateCharMenu()

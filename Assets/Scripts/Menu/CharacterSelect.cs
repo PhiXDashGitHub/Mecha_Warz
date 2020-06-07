@@ -12,6 +12,7 @@ public class CharacterSelect : MonoBehaviour
 
     public void Update()
     {
+        
         mechcolor = Color.HSVToRGB(Colorslider.value, 1, 1);
         Colorsliderfill.GetComponent<Image>().color = mechcolor;
         Debug.Log(mechcolor.ToString());
@@ -20,7 +21,10 @@ public class CharacterSelect : MonoBehaviour
         {
             if (Mechs3D[i].activeSelf)
             {
-                Mechs3D[i].GetComponent<SkinnedMeshRenderer>().material.color = mechcolor;
+                var block = new MaterialPropertyBlock();
+
+                block.SetColor("_BaseColor", mechcolor);
+                Mechs3D[i].GetComponent<SkinnedMeshRenderer>().SetPropertyBlock(block);
             }
         }
     }
