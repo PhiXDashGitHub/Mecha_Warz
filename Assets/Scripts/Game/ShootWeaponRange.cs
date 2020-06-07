@@ -17,13 +17,13 @@ public class ShootWeaponRange : MonoBehaviour
     void Update()
     {
         energyslider.value = Energy;
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && Energy > 5)
         {
             GameObject go = Instantiate(Expolsion, TurretControl.mousePos, Quaternion.identity);
             Destroy(go,1.5f);
             Energy -= 5;
         }
-        if (Input.GetMouseButton(0) && Delay <= 0)
+        if (Input.GetMouseButton(0) && Delay <= 0 && Energy > 1)
         {
             GameObject go = Instantiate(Laser, Gunparent[Random.Range(0,Gunparent.Length)].transform.position, Gunparent[Random.Range(0, Gunparent.Length)].transform.rotation);
             Destroy(go, 5f);

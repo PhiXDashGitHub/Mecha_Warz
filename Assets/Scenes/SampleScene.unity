@@ -45,14 +45,14 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
+    m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 12
@@ -1624,6 +1624,7 @@ MonoBehaviour:
   grassTiles:
   - {fileID: 6084147373026351240, guid: 5678dec6b8d20f94498e176777a01a51, type: 3}
   - {fileID: 855940507506028756, guid: 16dd95a7450ecac4185ce5ef025fa06b, type: 3}
+  - {fileID: 855940507506028756, guid: e00191c88f6cddd45b1c36b08b6b526b, type: 3}
   noiseScale: 184
   noiseWeight: 0.779
   noiseContrast: 0.286
