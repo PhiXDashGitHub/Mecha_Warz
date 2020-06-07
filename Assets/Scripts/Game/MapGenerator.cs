@@ -155,44 +155,4 @@ public class MapGenerator : MonoBehaviour
         result.Apply();
         return result;
     }
-
-    Vector3 RandomVector()
-    {
-        float random = UnityEngine.Random.Range(0, 8);
-
-        if (random == 0)
-        {
-            return Vector3.forward;
-        }
-        else if (random == 1)
-        {
-            return Vector3.back;
-        }
-        else if (random == 2)
-        {
-            return Vector3.right;
-        }
-        else if (random == 3)
-        {
-            return Vector3.left;
-        }
-        else if (random == 4)
-        {
-            return Vector3.forward + Vector3.right;
-        }
-        else if (random == 5)
-        {
-            return Vector3.forward + Vector3.left;
-        }
-        else if (random == 6)
-        {
-            return Vector3.back + Vector3.right;
-        }
-        else if (random == 7)
-        {
-            return Vector3.back + Vector3.left;
-        }
-
-        return Vector3.zero;
-    }
 }
