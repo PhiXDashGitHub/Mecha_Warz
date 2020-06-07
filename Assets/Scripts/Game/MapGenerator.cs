@@ -7,8 +7,13 @@ using UnityEngine.Tilemaps;
 
 public class MapGenerator : MonoBehaviour
 {
+    [Header("Preferences")]
     public Vector2 mapSize;
 
+    [Header("Tiles")]
+    public GameObject mainTown;
+
+    [Header("Noise")]
     [Range(10, 1000)]
     public float noiseScale;
     [Range(0, 1)]
@@ -16,12 +21,11 @@ public class MapGenerator : MonoBehaviour
     [Range(0, 1)]
     public float noiseContrast;
 
-    void Start()
+    void Start() 
     {
-        GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
-        ground.transform.SetParent(transform);
-
-        ground.transform.localScale = new Vector3(mapSize.x, 1, mapSize.y);
+        //Generate Main Town
+        GameObject mainTownInstance = Instantiate<GameObject>(mainTown, transform);
+        mainTownInstance.transform.position = Vector3.zero;
     }
 
     Texture2D GenerateNoiseTexture(int width, int height)
