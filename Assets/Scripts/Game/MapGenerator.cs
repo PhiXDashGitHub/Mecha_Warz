@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.Tilemaps;
@@ -9,12 +11,15 @@ public class MapGenerator : MonoBehaviour
 {
     [Header("Preferences")]
     public Vector2 mapSize;
-    public float tileSize;
-    public float townDistance;
+    public int tileSize;
+    public int townDistance;
 
     [Header("Tiles")]
     public GameObject mainTown;
     public GameObject[] otherTowns;
+    public GameObject[] grassTiles;
+
+    List<Vector3> otherTownPos;
 
     [Header("Noise")]
     [Range(10, 1000)]
@@ -26,17 +31,103 @@ public class MapGenerator : MonoBehaviour
 
     void Start() 
     {
-        //Generate Main Town
-        GameObject mainTownInstance = Instantiate<GameObject>(mainTown, transform);
-        mainTownInstance.transform.position = Vector3.zero;
+        otherTownPos = new List<Vector3>();
 
-        //Generate other Towns
+        //Generate Grass Tiles
+        for (float x = -mapSize.x; x < mapSize.x + tileSize; x += tileSize)
+        {
+            for (float z = -mapSize.y; z < mapSize.y + tileSize; z += tileSize)
+            {
+                GameObject newTile = Instantiate(grassTiles[UnityEngine.Random.Range(0, grassTiles.Length)], transform);
+                newTile.transform.position = new Vector3(x, 0, z);
+            }
+        }
+
+        //Delete Random Tiles
+        for (int i = 0; i < otherTowns.Length + 1; i++)
+        {
+            if (i == 0)
+            {
+                for (int c = 0; c < transform.childCount; c++)
+                {
+                    if (transform.GetChild(c).position == Vector3.zero)
+                    {
+                        Destroy(transform.GetChild(c).gameObject);
+                    }
+                }
+            }
+            else
+            {
+                Vector3 RandomPos = transform.GetChild(0).position;
+
+                for (int p = 0; p < 1; p += 0)
+                {
+                    if (RandomPos.x == -mapSize.x || RandomPos.x == mapSize.x || RandomPos.z == -mapSize.y || RandomPos.z == mapSize.y)
+                    {
+                        RandomPos = transform.GetChild(UnityEngine.Random.Range(0, transform.childCount)).position;
+                    }
+                    else
+                    {
+                        if (otherTownPos.Count > 0)
+                        {
+                            for (int t = 0; t < otherTownPos.Count; t++)
+                            {
+                                if (RandomPos == otherTownPos[t] || Vector3.Distance(RandomPos, otherTownPos[t]) < townDistance)
+                                {
+                                    RandomPos = transform.GetChild(UnityEngine.Random.Range(0, transform.childCount)).position;
+                                    break;
+                                }
+                                else
+                                {
+                                    if (t == otherTownPos.Count - 1)
+                                    {
+                                        otherTownPos.Add(RandomPos);
+                                        p++;
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            otherTownPos.Add(RandomPos);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < otherTownPos.Count; i++)
+        {
+            for (int c = 0; c < transform.childCount; c++)
+            {
+                if (otherTownPos[i] == transform.GetChild(c).position)
+                {
+                    Destroy(transform.GetChild(c).gameObject);
+                }
+            }
+        }
+
+        //Instantiate Towns
+        for (int i = 0; i < otherTownPos.Count; i++)
+        {
+            if (otherTownPos[i] == Vector3.zero)
+            {
+                GameObject newTown = Instantiate(mainTown, transform);
+                newTown.transform.position = Vector3.zero;
+                otherTownPos.RemoveAt(i);
+                break;
+            }
+        }
+
         for (int i = 0; i < otherTowns.Length; i++)
         {
-            GameObject otherTownInstance = Instantiate<GameObject>(otherTowns[i], transform);
-            Vector3 randPos = new Vector3(UnityEngine.Random.Range(-townDistance, townDistance), 0, UnityEngine.Random.Range(-townDistance, townDistance));
-            otherTownInstance.transform.position = mainTownInstance.transform.position + randPos;
+            GameObject newTown = Instantiate(otherTowns[i], transform);
+            newTown.transform.position = otherTownPos[i];
         }
+
+        GameObject newTown2 = Instantiate(mainTown, transform);
+        newTown2.transform.position = Vector3.zero;
     }
 
     Texture2D GenerateNoiseTexture(int width, int height)
@@ -63,5 +154,45 @@ public class MapGenerator : MonoBehaviour
 
         result.Apply();
         return result;
+    }
+
+    Vector3 RandomVector()
+    {
+        float random = UnityEngine.Random.Range(0, 8);
+
+        if (random == 0)
+        {
+            return Vector3.forward;
+        }
+        else if (random == 1)
+        {
+            return Vector3.back;
+        }
+        else if (random == 2)
+        {
+            return Vector3.right;
+        }
+        else if (random == 3)
+        {
+            return Vector3.left;
+        }
+        else if (random == 4)
+        {
+            return Vector3.forward + Vector3.right;
+        }
+        else if (random == 5)
+        {
+            return Vector3.forward + Vector3.left;
+        }
+        else if (random == 6)
+        {
+            return Vector3.back + Vector3.right;
+        }
+        else if (random == 7)
+        {
+            return Vector3.back + Vector3.left;
+        }
+
+        return Vector3.zero;
     }
 }

@@ -6121,7 +6121,7 @@ Camera:
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
+  m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &519420032
@@ -10463,13 +10463,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7461d408216128e45a86337ad64ffc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapSize: {x: 700, y: 350}
+  mapSize: {x: 1000, y: 500}
   tileSize: 100
-  townDistance: 300
-  mainTown: {fileID: 3970884058854256402, guid: d802afa96047fe948a0a0a40ea9c003f,
+  townDistance: 200
+  mainTown: {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d,
     type: 3}
   otherTowns:
-  - {fileID: 7694767275656275983, guid: 523676722c05fa744ad281d9682efb13, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  - {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d, type: 3}
+  grassTiles:
+  - {fileID: 6084147373026351240, guid: 5678dec6b8d20f94498e176777a01a51, type: 3}
   noiseScale: 184
   noiseWeight: 0.779
   noiseContrast: 0.286
