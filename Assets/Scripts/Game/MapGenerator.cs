@@ -9,9 +9,12 @@ public class MapGenerator : MonoBehaviour
 {
     [Header("Preferences")]
     public Vector2 mapSize;
+    public float tileSize;
+    public float townDistance;
 
     [Header("Tiles")]
     public GameObject mainTown;
+    public GameObject[] otherTowns;
 
     [Header("Noise")]
     [Range(10, 1000)]
@@ -26,6 +29,14 @@ public class MapGenerator : MonoBehaviour
         //Generate Main Town
         GameObject mainTownInstance = Instantiate<GameObject>(mainTown, transform);
         mainTownInstance.transform.position = Vector3.zero;
+
+        //Generate other Towns
+        for (int i = 0; i < otherTowns.Length; i++)
+        {
+            GameObject otherTownInstance = Instantiate<GameObject>(otherTowns[i], transform);
+            Vector3 randPos = new Vector3(UnityEngine.Random.Range(-townDistance, townDistance), 0, UnityEngine.Random.Range(-townDistance, townDistance));
+            otherTownInstance.transform.position = mainTownInstance.transform.position + randPos;
+        }
     }
 
     Texture2D GenerateNoiseTexture(int width, int height)
