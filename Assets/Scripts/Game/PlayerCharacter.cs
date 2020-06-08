@@ -29,7 +29,8 @@ public class PlayerCharacter : MonoBehaviour
     public float poisonResistance;
 
     //Ui
-    public GameObject HealthSlider;
+    public GameObject healthSlider;
+
     void Start()
     {
         health = maxHealth;
@@ -39,7 +40,8 @@ public class PlayerCharacter : MonoBehaviour
         StartCoroutine(RegenerateHealth());
         StartCoroutine(RegenerateMagicShield());
         StartCoroutine(RegenerateShield());
-        
+
+        healthSlider.GetComponent<Slider>().maxValue = maxHealth;
     }
 
     void Update()
@@ -52,6 +54,10 @@ public class PlayerCharacter : MonoBehaviour
         enlightenment = Mathf.Clamp(enlightenment, 0, 25);
         HealthSlider.GetComponent<Slider>().maxValue = maxHealth;
         HealthSlider.GetComponent<Slider>().value = health;
+
+
+        healthSlider.GetComponent<Slider>().value = health;
+
     }
 
     IEnumerator RegenerateHealth()
@@ -85,5 +91,14 @@ public class PlayerCharacter : MonoBehaviour
 
         yield return new WaitForSeconds(10);
         StartCoroutine(RegenerateShield());
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Weapon") && other.GetComponent<Weapon>())
+        {
+            health -= other.GetComponent<Weapon>().Damage;
+            Destroy(other.gameObject);
+        }
     }
 }
