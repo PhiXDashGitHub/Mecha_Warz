@@ -2274,7 +2274,7 @@ GameObject:
   - component: {fileID: 7377212901061869072}
   m_Layer: 0
   m_Name: Player(Fire)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21554,6 +21554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
+  ismeshweapon: 0
 --- !u!1 &7378457375383535566
 GameObject:
   m_ObjectHideFlags: 0
@@ -26396,6 +26397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 30
+  ismeshweapon: 0
 --- !u!1 &7378868844933095124
 GameObject:
   m_ObjectHideFlags: 0

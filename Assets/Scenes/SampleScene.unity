@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 852123879}
   m_Layer: 0
   m_Name: PlayerRange
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,6 +973,8 @@ MonoBehaviour:
   maxShield: 0
   maxToughness: 0
   maxEnlightenment: 0
+  maxenergy: 0
+  energy: 0
   fireResistance: 0
   waterResistance: 0
   iceResistance: 0

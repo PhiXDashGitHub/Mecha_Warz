@@ -13,10 +13,15 @@ public class ShootWeaponRange : MonoBehaviour
     public void Start()
     {
         energyslider.maxValue = MaxEnergy;
+        Energy = this.GetComponent<PlayerCharacter>().energy;
+        MaxEnergy = this.GetComponent<PlayerCharacter>().maxenergy;
     }
     void Update()
     {
         energyslider.value = Energy;
+        this.GetComponent<PlayerCharacter>().energy = Energy;
+        this.GetComponent<PlayerCharacter>().maxenergy = MaxEnergy;
+
         if (Input.GetMouseButtonDown(1) && Energy > 5)
         {
             GameObject go = Instantiate(Expolsion, TurretControl.mousePos, Quaternion.identity);

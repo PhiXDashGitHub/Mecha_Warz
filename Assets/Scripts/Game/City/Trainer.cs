@@ -4,50 +4,83 @@ using UnityEngine;
 
 public class Trainer : MonoBehaviour
 {
-    public GameObject Player;
+    private GameObject Player;
+    public GameObject Menu;
     private int slot;
-
-    void Start()
+    public GameObject[] Upgardes;
+    public void OnTriggerEnter(Collider other)
     {
-        
-    }
-    
-    void Update()
-    {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            Menu.SetActive(true);
+            Player = other.gameObject;
+        }
+        if (Player.GetComponent<PlayerStats>().progressionLevel >= 25)
+        {
+            Upgardes[0].SetActive(false);
+        }
+        if(Player.GetComponent<PlayerStats>().progressionLevel >= 50)
+        {
+            Upgardes[1].SetActive(false);
+        }
+        if(Player.GetComponent<PlayerStats>().progressionLevel >= 75)
+        {
+            Upgardes[2].SetActive(false);
+        }
     }
 
-    public void NewPerc()
+    public void NewPerc(int index)
     {
         if(Player.GetComponent<PlayerStats>().progressionLevel >= 25 || slot < 1)
         {
             slot++;
-            AddFirstPerc();
+            AddFirstPerc(index);
         }
         else if (Player.GetComponent<PlayerStats>().progressionLevel >= 50 || slot < 2)
         {
             slot++;
-            AddSecPerc();
+            AddSecPerc(index);
         }
         else if (Player.GetComponent<PlayerStats>().progressionLevel >= 75 || slot < 3)
         {
             slot++;
-            AddThrPerc();
+            AddThrPerc(index);
         }
     }
 
-    public void AddFirstPerc()
+    public void AddFirstPerc(int index)
     {
-
+        if(index == 1)
+        {
+            Player.GetComponent<PlayerCharacter>().maxHealth *= 2;
+        }
+        else
+        {
+            Player.GetComponent<PlayerCharacter>().maxShield += 10;
+        }
     }
 
-    public void AddSecPerc()
+    public void AddSecPerc(int index)
     {
-
+        if (index == 1)
+        {
+            Player.GetComponent<PlayerCharacter>().maxShield = 20;
+        }
+        else
+        {
+            Player.GetComponent<PlayerCharacter>().maxenergy += 10;
+        }
     }
 
-    public void AddThrPerc()
+    public void AddThrPerc(int index)
     {
-
+        if (index == 1)
+        {
+            Player.GetComponent<PlayerCharacter>().maxToughness += 20;
+        }
+        else
+        {
+            Player.GetComponent<PlayerCharacter>().maxEnlightenment += 100;
+        }
     }
 }

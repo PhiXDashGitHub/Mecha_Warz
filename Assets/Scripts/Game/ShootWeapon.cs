@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShootWeapon : MonoBehaviour
 {
-    public float Energy, MaxEnergy;
+    private float Energy, MaxEnergy;
     public GameObject weapon, weapon2;
     public bool isautomatic1,isautomatic2;
     public Slider energyslider;
@@ -13,11 +13,15 @@ public class ShootWeapon : MonoBehaviour
     public void Start()
     {
         energyslider.maxValue = MaxEnergy;
+        Energy = this.GetComponent<PlayerCharacter>().energy;
+        MaxEnergy = this.GetComponent<PlayerCharacter>().maxenergy;
     }
 
     void Update()
     {
         energyslider.value = Energy;
+        this.GetComponent<PlayerCharacter>().energy = Energy;
+        this.GetComponent<PlayerCharacter>().maxenergy = MaxEnergy;
 
         if (isautomatic1 && Energy > 0)
         {

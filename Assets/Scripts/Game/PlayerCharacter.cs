@@ -16,7 +16,8 @@ public class PlayerCharacter : MonoBehaviour
     private float toughness;
     public float maxEnlightenment;
     private float enlightenment;
-
+    public float maxenergy;
+    public float energy;
     //Resistance
     public float fireResistance;
     public float waterResistance;
@@ -38,7 +39,7 @@ public class PlayerCharacter : MonoBehaviour
         StartCoroutine(RegenerateHealth());
         StartCoroutine(RegenerateMagicShield());
         StartCoroutine(RegenerateShield());
-        HealthSlider.GetComponent<Slider>().maxValue = maxHealth;
+        
     }
 
     void Update()
@@ -49,7 +50,7 @@ public class PlayerCharacter : MonoBehaviour
         shield = Mathf.Clamp(shield, 0, 1);
         toughness = Mathf.Clamp(toughness, 0, 25);
         enlightenment = Mathf.Clamp(enlightenment, 0, 25);
-
+        HealthSlider.GetComponent<Slider>().maxValue = maxHealth;
         HealthSlider.GetComponent<Slider>().value = health;
     }
 
