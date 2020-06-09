@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public NavMeshAgent agent;
 
     public enum EnemyType { Walking, Stationary, Boss }
-    public enum BossElement { Fire, Ice }
+    public enum BossElement { Fire, Water, Ice, Electric, Poison }
     public EnemyType type;
     public BossElement bossElement;
 
