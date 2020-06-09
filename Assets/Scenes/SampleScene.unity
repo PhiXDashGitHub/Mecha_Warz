@@ -2358,12 +2358,12 @@ MonoBehaviour:
     type: 3}
   otherTowns:
   - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
-  - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
-  - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
-  - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
-  - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
-  - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
-  - {fileID: 7541535790671171588, guid: 6e6725fc580b7b946b4ad33b8f8f667b, type: 3}
+  - {fileID: 7541535790671171588, guid: aa0ef37d7ddd4dd489a6a6c87913f967, type: 3}
+  - {fileID: 7541535790671171588, guid: ad5d8ba57668249478e060a9eb48a503, type: 3}
+  - {fileID: 7541535790671171588, guid: e4540de2d8cdd3141b6b6cb07f5db2e3, type: 3}
+  - {fileID: 7541535790671171588, guid: e4540de2d8cdd3141b6b6cb07f5db2e3, type: 3}
+  - {fileID: 7541535790671171588, guid: aa0ef37d7ddd4dd489a6a6c87913f967, type: 3}
+  - {fileID: 7541535790671171588, guid: e4540de2d8cdd3141b6b6cb07f5db2e3, type: 3}
   grassTiles:
   - {fileID: 6084147373026351240, guid: 5678dec6b8d20f94498e176777a01a51, type: 3}
   - {fileID: 855940507506028756, guid: 16dd95a7450ecac4185ce5ef025fa06b, type: 3}
