@@ -9,24 +9,29 @@ public class Trainer : MonoBehaviour
     private int slot;
     public GameObject[] Upgardes;
 
+    void Start()
+    {
+        Player = FindObjectOfType<PlayerStats>().gameObject;
+    }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             Menu.SetActive(true);
-            Player = other.gameObject;
-        }
-        if (Player.GetComponent<PlayerStats>().progressionLevel >= 1)
-        {
-            Upgardes[0].SetActive(false);
-        }
-        if(Player.GetComponent<PlayerStats>().progressionLevel >= 2)
-        {
-            Upgardes[1].SetActive(false);
-        }
-        if(Player.GetComponent<PlayerStats>().progressionLevel >= 3)
-        {
-            Upgardes[2].SetActive(false);
+
+            if (Player.GetComponent<PlayerStats>().progressionLevel >= 1)
+            {
+                Upgardes[0].SetActive(false);
+            }
+            if (Player.GetComponent<PlayerStats>().progressionLevel >= 2)
+            {
+                Upgardes[1].SetActive(false);
+            }
+            if (Player.GetComponent<PlayerStats>().progressionLevel >= 3)
+            {
+                Upgardes[2].SetActive(false);
+            }
         }
     }
 

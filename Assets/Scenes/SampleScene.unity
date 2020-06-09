@@ -4307,16 +4307,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6647094638521172654, guid: 6be2a02ab50c1194da19f579310f57fd,
-        type: 3}
-      propertyPath: deathParticles
-      value: 
-      objectReference: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
-    - target: {fileID: 6647094638521172654, guid: 6be2a02ab50c1194da19f579310f57fd,
-        type: 3}
-      propertyPath: magicForPlayer
-      value: 5600
-      objectReference: {fileID: 0}
     - target: {fileID: 6647094638521172658, guid: 6be2a02ab50c1194da19f579310f57fd,
         type: 3}
       propertyPath: m_LocalPosition.x

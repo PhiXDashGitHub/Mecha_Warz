@@ -128,12 +128,15 @@ MonoBehaviour:
   objectToRotate: {fileID: 6647094638521172658}
   laserObject: {fileID: 6716722349938711241, guid: 2f150887a36483841a0724cf401f4158,
     type: 3}
+  deathParticles: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
   agent: {fileID: 6647094638521172660}
   type: 0
+  bossElement: 0
   Maxhealth: 100
   range: 10
   shootTime: 1
   angularSpeed: 2
+  magicForPlayer: 5600
 --- !u!195 &6647094638521172660
 NavMeshAgent:
   m_ObjectHideFlags: 0
