@@ -108,6 +108,7 @@ public class Enemy : MonoBehaviour
     IEnumerator Shoot()
     {
         GameObject laser = Instantiate(laserObject, null);
+        laser.transform.position = transform.position;
         laser.transform.localEulerAngles = objectToRotate.localEulerAngles;
         Destroy(laser, 5);
         yield return new WaitForSeconds(shootTime);

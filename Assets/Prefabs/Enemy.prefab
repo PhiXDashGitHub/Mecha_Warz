@@ -1757,7 +1757,7 @@ MonoBehaviour:
   range: 10
   shootTime: 1
   angularSpeed: 2
-  magicForPlayer: 5600
+  magicForPlayer: 1400
 --- !u!195 &6647094638521172660
 NavMeshAgent:
   m_ObjectHideFlags: 0
