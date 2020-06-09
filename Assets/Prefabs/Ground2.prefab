@@ -4796,12 +4796,13 @@ GameObject:
   - component: {fileID: 1589844468181655451}
   - component: {fileID: 1589844468181655449}
   - component: {fileID: 1589844468181655450}
+  - component: {fileID: 7093639947373615415}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967287
   m_IsActive: 1
 --- !u!4 &1589844468181655451
 Transform:
@@ -4861,6 +4862,35 @@ TerrainCollider:
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 51d4d1a3c5a553343a10bcdccbbe679a, type: 2}
   m_EnableTreeColliders: 1
+--- !u!114 &7093639947373615415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589844468181655452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 40f46984bcc3cc94389ca36cdb8a06a8, type: 2}
 --- !u!1 &3066632380773589911
 GameObject:
   m_ObjectHideFlags: 0
@@ -9785,6 +9815,7 @@ GameObject:
   - component: {fileID: 3066632381202843533}
   - component: {fileID: 3066632381202843534}
   - component: {fileID: 3066632381202843532}
+  - component: {fileID: 6875985564888140596}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_01 (1)
   m_TagString: Untagged
@@ -9890,6 +9921,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.8096004, y: 1.8000255, z: 6.326624}
   m_Center: {x: 0.000000034968508, y: 1.1733484, z: -0.37439045}
+--- !u!208 &6875985564888140596
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3066632381202843528}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.9050001, y: 0.90000004, z: 3.163}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.1730001, z: -0.374}
+  m_TimeToStationary: 0.5
 --- !u!1 &3066632381203155519
 GameObject:
   m_ObjectHideFlags: 0
@@ -12025,6 +12072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3547970508212850667}
   - component: {fileID: 3547970508212491144}
+  - component: {fileID: 3698860659568461105}
   m_Layer: 0
   m_Name: mech
   m_TagString: Untagged
@@ -12062,6 +12110,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.7744973, y: 3.51097, z: 3.630043}
   m_Center: {x: -0.23613194, y: 1.2554849, z: 1.3150218}
+--- !u!208 &3698860659568461105
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547970508212491145}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3547970508212491149
 GameObject:
   m_ObjectHideFlags: 0

@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 6584053095172975265}
   - component: {fileID: 6196763636996663765}
   - component: {fileID: 993951069543581569}
+  - component: {fileID: 6579821308109486135}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (5)
   m_TagString: Untagged
@@ -286,6 +287,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6579821308109486135
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47933469988097118}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &80511835752886224
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,6 +820,7 @@ GameObject:
   - component: {fileID: 2870579867889121449}
   - component: {fileID: 1289207131919176037}
   - component: {fileID: 5114801770240949018}
+  - component: {fileID: 1786056695407210282}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (17)
   m_TagString: Untagged
@@ -888,6 +906,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &1786056695407210282
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253344163532657630}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &269679942706625360
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +934,7 @@ GameObject:
   - component: {fileID: 274260476340759713}
   - component: {fileID: 1677141392337352361}
   - component: {fileID: 1230557021773888240}
+  - component: {fileID: 5894565228957782294}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (7)
   m_TagString: Untagged
@@ -985,6 +1020,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &5894565228957782294
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269679942706625360}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &319926424144295375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1424,7 @@ GameObject:
   - component: {fileID: 5564748325077916650}
   - component: {fileID: 2163272037982005011}
   - component: {fileID: 5182901160183806996}
+  - component: {fileID: 1473593014597104167}
   m_Layer: 0
   m_Name: SM_Bld_Warehouse_01
   m_TagString: Untagged
@@ -1454,6 +1506,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.718964, y: 9.156791, z: 22.609535}
   m_Center: {x: 0, y: 4.5783954, z: 0}
+--- !u!208 &1473593014597104167
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448577077619315663}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 10.859, y: 4.578, z: 11.305}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 4.578, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &462209483861460485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1613,7 @@ GameObject:
   - component: {fileID: 3301766277107038335}
   - component: {fileID: 5293199624405678200}
   - component: {fileID: 6004826882639314920}
+  - component: {fileID: 5061117054300673228}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (4)
   m_TagString: Untagged
@@ -1626,6 +1695,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &5061117054300673228
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489845035421270632}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &491844842996305784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1912,7 @@ GameObject:
   - component: {fileID: 5377645267974898741}
   - component: {fileID: 5469089394309698021}
   - component: {fileID: 8513770571658403305}
+  - component: {fileID: 6573860517651726800}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (6)
   m_TagString: Untagged
@@ -1908,6 +1994,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &6573860517651726800
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622066918935747772}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &628296925244878539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +2085,7 @@ GameObject:
   - component: {fileID: 1485112812212358174}
   - component: {fileID: 6679787010142789695}
   - component: {fileID: 9208870201858405683}
+  - component: {fileID: 3492878159995255613}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (7)
   m_TagString: Untagged
@@ -2051,6 +2154,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &3492878159995255613
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690255852494869720}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &810489887952761839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2600,7 @@ GameObject:
   - component: {fileID: 6850304024875865635}
   - component: {fileID: 3359812123804905274}
   - component: {fileID: 103581075247458032}
+  - component: {fileID: 2178848758107430036}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (10)
   m_TagString: Untagged
@@ -2549,6 +2669,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &2178848758107430036
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008437038684733916}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1050957654529721649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,6 +3092,7 @@ GameObject:
   - component: {fileID: 1149588305576014828}
   - component: {fileID: 1149588305576014819}
   - component: {fileID: 2087181863122442029}
+  - component: {fileID: 988499528265546191}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (2)
   m_TagString: Untagged
@@ -3037,6 +3174,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &988499528265546191
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149588305576014817}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1149588305738318722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3439,7 @@ GameObject:
   - component: {fileID: 1149588306588141831}
   - component: {fileID: 1149588306588141830}
   - component: {fileID: 1149588306588141829}
+  - component: {fileID: 4941452617472390363}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (6)
   m_TagString: Untagged
@@ -3371,6 +3525,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &4941452617472390363
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149588306588141851}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1149588306845535001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3462,6 +3632,7 @@ GameObject:
   - component: {fileID: 1149588306857745486}
   - component: {fileID: 1149588306857745485}
   - component: {fileID: 1149588306857745484}
+  - component: {fileID: 8523225795154426430}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (10)
   m_TagString: Untagged
@@ -3547,6 +3718,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &8523225795154426430
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149588306857745474}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1149588307110416743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,6 +4217,7 @@ GameObject:
   - component: {fileID: 7762268810731721833}
   - component: {fileID: 4815405290760009913}
   - component: {fileID: 7935901701263510652}
+  - component: {fileID: 7052235248337414376}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (1)
   m_TagString: Untagged
@@ -4098,6 +4286,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &7052235248337414376
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294549361446077646}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1298904539034186854
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4392,7 @@ GameObject:
   - component: {fileID: 558662501966322024}
   - component: {fileID: 6404225126221524866}
   - component: {fileID: 4572596975875730918}
+  - component: {fileID: 4994088162767584503}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (8)
   m_TagString: Untagged
@@ -4262,6 +4467,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &4994088162767584503
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379262454080647822}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1540408454965302527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,6 +4651,7 @@ GameObject:
   - component: {fileID: 6809702110909810379}
   - component: {fileID: 8733197541732942561}
   - component: {fileID: 1569583179849989242}
+  - component: {fileID: 1771163116401101958}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (27)
   m_TagString: Untagged
@@ -4515,6 +4737,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &1771163116401101958
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549618758892915340}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1606657767871227784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4983,6 +5221,7 @@ GameObject:
   - component: {fileID: 1863662641480643121}
   - component: {fileID: 737422519396609208}
   - component: {fileID: 2870198529546051498}
+  - component: {fileID: 5012906015103108522}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (7)
   m_TagString: Untagged
@@ -5057,6 +5296,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &5012906015103108522
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727254891294394785}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1739448108972157640
 GameObject:
   m_ObjectHideFlags: 0
@@ -5575,6 +5830,7 @@ GameObject:
   - component: {fileID: 568449272634703227}
   - component: {fileID: 7612210641643428614}
   - component: {fileID: 5273195741080606829}
+  - component: {fileID: 7842114379817777220}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (5)
   m_TagString: Untagged
@@ -5649,6 +5905,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &7842114379817777220
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855228247581080143}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1856087114265905428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5739,6 +6011,7 @@ GameObject:
   - component: {fileID: 8938865927191714848}
   - component: {fileID: 3216280531182590697}
   - component: {fileID: 3091134682001426493}
+  - component: {fileID: 1909734914034390865}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (5)
   m_TagString: Untagged
@@ -5807,6 +6080,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &1909734914034390865
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859160368035054715}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1876883959883892056
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,6 +6107,7 @@ GameObject:
   - component: {fileID: 3195112468629485387}
   - component: {fileID: 5840138901802175869}
   - component: {fileID: 157870116188467588}
+  - component: {fileID: 6275598768004983712}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01
   m_TagString: Untagged
@@ -5886,6 +6176,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &6275598768004983712
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876883959883892056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &1885508507230213604
 GameObject:
   m_ObjectHideFlags: 0
@@ -6324,6 +6630,7 @@ GameObject:
   - component: {fileID: 3084218009157038027}
   - component: {fileID: 1145617454977975576}
   - component: {fileID: 3225049787225070421}
+  - component: {fileID: 1970217046580233634}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_Destroyed_01 (3)
   m_TagString: Untagged
@@ -6393,6 +6700,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &1970217046580233634
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956034916840521610}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5570002, y: 1.5600001, z: 3.8400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.007, y: 1.4100001, z: 0.293}
+  m_TimeToStationary: 0.5
 --- !u!1 &1992751334327331462
 GameObject:
   m_ObjectHideFlags: 0
@@ -6405,6 +6728,7 @@ GameObject:
   - component: {fileID: 163760275938660814}
   - component: {fileID: 2061531279305216618}
   - component: {fileID: 65585732593814162}
+  - component: {fileID: 6042640304373398432}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (18)
   m_TagString: Untagged
@@ -6490,6 +6814,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6042640304373398432
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992751334327331462}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1996319657135152999
 GameObject:
   m_ObjectHideFlags: 0
@@ -6798,6 +7138,7 @@ GameObject:
   - component: {fileID: 3425806154402394480}
   - component: {fileID: 6459021628125749462}
   - component: {fileID: 8482071734668274554}
+  - component: {fileID: 1593359620628541166}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (12)
   m_TagString: Untagged
@@ -6883,6 +7224,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &1593359620628541166
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028076034853267269}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2028327076961977306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,6 +7330,7 @@ GameObject:
   - component: {fileID: 383968921752739412}
   - component: {fileID: 3165057520197935684}
   - component: {fileID: 391345240836232875}
+  - component: {fileID: 3387545485558611206}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_Destroyed_01 (4)
   m_TagString: Untagged
@@ -7042,6 +7400,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &3387545485558611206
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062878828752929131}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5570002, y: 1.5600001, z: 3.8400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.007, y: 1.4100001, z: 0.293}
+  m_TimeToStationary: 0.5
 --- !u!1 &2084193410561556998
 GameObject:
   m_ObjectHideFlags: 0
@@ -7211,6 +7585,7 @@ GameObject:
   - component: {fileID: 3119763352092570080}
   - component: {fileID: 6201639765340408790}
   - component: {fileID: 372725547119589167}
+  - component: {fileID: 6352276022781246760}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01
   m_TagString: Untagged
@@ -7285,6 +7660,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &6352276022781246760
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094448591880094707}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &2120849656566560807
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,6 +7688,7 @@ GameObject:
   - component: {fileID: 2895779029420483341}
   - component: {fileID: 1158866196228349828}
   - component: {fileID: 3918807329658994954}
+  - component: {fileID: 546794564381609467}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (26)
   m_TagString: Untagged
@@ -7382,6 +7774,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &546794564381609467
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120849656566560807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2136402005831270217
 GameObject:
   m_ObjectHideFlags: 0
@@ -7740,6 +8148,7 @@ GameObject:
   - component: {fileID: 1744153170180500462}
   - component: {fileID: 2935587551485667912}
   - component: {fileID: 2739243006431270325}
+  - component: {fileID: 2416206251385481353}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (13)
   m_TagString: Untagged
@@ -7825,6 +8234,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &2416206251385481353
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294500498288992771}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2297471066507897849
 GameObject:
   m_ObjectHideFlags: 0
@@ -8450,6 +8875,7 @@ GameObject:
   - component: {fileID: 1788923596789389142}
   - component: {fileID: 3236422895085741907}
   - component: {fileID: 1316622990714031543}
+  - component: {fileID: 1702189912818432665}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (9)
   m_TagString: Untagged
@@ -8531,6 +8957,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &1702189912818432665
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624899336542957853}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2675685935600966129
 GameObject:
   m_ObjectHideFlags: 0
@@ -8804,6 +9246,7 @@ GameObject:
   - component: {fileID: 1561822844382196175}
   - component: {fileID: 5762971524087350019}
   - component: {fileID: 4583379099952894708}
+  - component: {fileID: 7522754411126456567}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_Destroyed_01 (1)
   m_TagString: Untagged
@@ -8873,6 +9316,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &7522754411126456567
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758740772978887510}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5570002, y: 1.5600001, z: 3.8400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.007, y: 1.4100001, z: 0.293}
+  m_TimeToStationary: 0.5
 --- !u!1 &2761305348172993268
 GameObject:
   m_ObjectHideFlags: 0
@@ -9703,6 +10162,7 @@ GameObject:
   - component: {fileID: 59581149097964353}
   - component: {fileID: 7001444356774940095}
   - component: {fileID: 364857822234789529}
+  - component: {fileID: 3892354560461742691}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -9768,6 +10228,35 @@ TerrainCollider:
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 65ddf7e3567afe443bdd6df47c2b6673, type: 2}
   m_EnableTreeColliders: 1
+--- !u!114 &3892354560461742691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2954494903182188815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 2bca505f81eaafe4b87d05423c38f8dc, type: 2}
 --- !u!1 &2974651542443891152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,6 +10598,7 @@ GameObject:
   - component: {fileID: 2272190484097467739}
   - component: {fileID: 5198634306193795810}
   - component: {fileID: 9046304748090007818}
+  - component: {fileID: 2588387899791693466}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (6)
   m_TagString: Untagged
@@ -10183,6 +10673,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &2588387899791693466
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3058236816844735175}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &3063243421318332563
 GameObject:
   m_ObjectHideFlags: 0
@@ -10273,6 +10779,7 @@ GameObject:
   - component: {fileID: 2058647573476818489}
   - component: {fileID: 7046672923943306255}
   - component: {fileID: 3672200456014854390}
+  - component: {fileID: 119183375600954194}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_Destroyed_01
   m_TagString: Untagged
@@ -10342,6 +10849,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &119183375600954194
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083436150016756778}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5570002, y: 1.5600001, z: 3.8400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.007, y: 1.4100001, z: 0.293}
+  m_TimeToStationary: 0.5
 --- !u!1 &3135562455822658437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10850,6 +11373,7 @@ GameObject:
   - component: {fileID: 3314010419515759068}
   - component: {fileID: 3314010419515759069}
   - component: {fileID: 3314010419515759070}
+  - component: {fileID: 4694494898497075888}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (4)
   m_TagString: Untagged
@@ -10934,6 +11458,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &4694494898497075888
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010419515758880}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010419527450004
 GameObject:
   m_ObjectHideFlags: 0
@@ -11025,6 +11565,7 @@ GameObject:
   - component: {fileID: 3314010419544034756}
   - component: {fileID: 3314010419544034757}
   - component: {fileID: 3314010419544034758}
+  - component: {fileID: 6737187948756206612}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (3)
   m_TagString: Untagged
@@ -11110,6 +11651,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6737187948756206612
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010419544034760}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010419566471320
 GameObject:
   m_ObjectHideFlags: 0
@@ -11201,6 +11758,7 @@ GameObject:
   - component: {fileID: 3314010419583085029}
   - component: {fileID: 3314010419583085030}
   - component: {fileID: 3314010419583085031}
+  - component: {fileID: 6443309813214179010}
   m_Layer: 0
   m_Name: Street1Lane40m (3)
   m_TagString: Untagged
@@ -11289,6 +11847,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6443309813214179010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010419583085033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 729faec97f5658044993b95ba2ec0d53, type: 2}
 --- !u!1 &3314010419589130284
 GameObject:
   m_ObjectHideFlags: 0
@@ -11551,6 +12138,7 @@ GameObject:
   - component: {fileID: 3314010419827027636}
   - component: {fileID: 3314010419827027637}
   - component: {fileID: 3314010419827027638}
+  - component: {fileID: 3888238091493789293}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (12)
   m_TagString: Untagged
@@ -11635,6 +12223,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &3888238091493789293
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010419827027640}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010419917741844
 GameObject:
   m_ObjectHideFlags: 0
@@ -12204,6 +12808,7 @@ GameObject:
   - component: {fileID: 3314010420206719294}
   - component: {fileID: 3314010420206719295}
   - component: {fileID: 3314010420206719232}
+  - component: {fileID: 1323256094238479913}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (6)
   m_TagString: Untagged
@@ -12288,6 +12893,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &1323256094238479913
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010420206719234}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010420222362910
 GameObject:
   m_ObjectHideFlags: 0
@@ -12392,6 +13013,7 @@ GameObject:
   - component: {fileID: 3314010420225566765}
   - component: {fileID: 3314010420225566766}
   - component: {fileID: 3314010420225566767}
+  - component: {fileID: 6431047272118919898}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (2)
   m_TagString: Untagged
@@ -12476,6 +13098,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &6431047272118919898
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010420225566769}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010420347382076
 GameObject:
   m_ObjectHideFlags: 0
@@ -12488,6 +13126,7 @@ GameObject:
   - component: {fileID: 3314010420347382072}
   - component: {fileID: 3314010420347382073}
   - component: {fileID: 3314010420347382074}
+  - component: {fileID: 9106986727006185736}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (3)
   m_TagString: Untagged
@@ -12572,6 +13211,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &9106986727006185736
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010420347382076}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010420350334281
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,6 +13423,7 @@ GameObject:
   - component: {fileID: 3314010420445422726}
   - component: {fileID: 3314010420445422727}
   - component: {fileID: 3314010420445422728}
+  - component: {fileID: 2768096813946645150}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (4)
   m_TagString: Untagged
@@ -12853,6 +13509,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &2768096813946645150
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010420445422730}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010420460509595
 GameObject:
   m_ObjectHideFlags: 0
@@ -13049,6 +13721,7 @@ GameObject:
   - component: {fileID: 3314010420577751035}
   - component: {fileID: 3314010420577751036}
   - component: {fileID: 3314010420577751037}
+  - component: {fileID: 2457737423108152532}
   m_Layer: 0
   m_Name: Street1Lane40m (2)
   m_TagString: Untagged
@@ -13137,6 +13810,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2457737423108152532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010420577751039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 935c615720b629a4ebf9b797ce61e56d, type: 2}
 --- !u!1 &3314010420624435088
 GameObject:
   m_ObjectHideFlags: 0
@@ -13410,6 +14112,7 @@ GameObject:
   - component: {fileID: 3314010420890698635}
   - component: {fileID: 3314010420890698636}
   - component: {fileID: 3314010420890698637}
+  - component: {fileID: 9130017828042625782}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (13)
   m_TagString: Untagged
@@ -13494,6 +14197,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &9130017828042625782
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010420890698639}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010421046221856
 GameObject:
   m_ObjectHideFlags: 0
@@ -13874,6 +14593,7 @@ GameObject:
   - component: {fileID: 3314010421171912928}
   - component: {fileID: 3314010421171912929}
   - component: {fileID: 3314010421171912930}
+  - component: {fileID: 497794606305484244}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (1)
   m_TagString: Untagged
@@ -13958,6 +14678,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &497794606305484244
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010421171912932}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010421217739413
 GameObject:
   m_ObjectHideFlags: 0
@@ -13970,6 +14706,7 @@ GameObject:
   - component: {fileID: 3314010421217739409}
   - component: {fileID: 3314010421217739410}
   - component: {fileID: 3314010421217739411}
+  - component: {fileID: 7117715369939881081}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (15)
   m_TagString: Untagged
@@ -14054,6 +14791,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &7117715369939881081
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010421217739413}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010421220915783
 GameObject:
   m_ObjectHideFlags: 0
@@ -14421,6 +15174,7 @@ GameObject:
   - component: {fileID: 3314010421333436906}
   - component: {fileID: 3314010421333436907}
   - component: {fileID: 3314010421333436908}
+  - component: {fileID: 8095808658529781327}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (1)
   m_TagString: Untagged
@@ -14506,6 +15260,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &8095808658529781327
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010421333436910}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010421408870708
 GameObject:
   m_ObjectHideFlags: 0
@@ -14518,6 +15288,7 @@ GameObject:
   - component: {fileID: 3314010421408870704}
   - component: {fileID: 3314010421408870705}
   - component: {fileID: 3314010421408870706}
+  - component: {fileID: 3667212577715937237}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black) (5)
   m_TagString: Untagged
@@ -14602,6 +15373,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &3667212577715937237
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314010421408870708}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &3314010421419048680
 GameObject:
   m_ObjectHideFlags: 0
@@ -14825,6 +15612,7 @@ GameObject:
   - component: {fileID: 7288979876120957498}
   - component: {fileID: 4738667180397359895}
   - component: {fileID: 8419916040070953316}
+  - component: {fileID: 5931366461829804110}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (9)
   m_TagString: Untagged
@@ -14910,6 +15698,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &5931366461829804110
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3323660545570852452}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3334631361608312250
 GameObject:
   m_ObjectHideFlags: 0
@@ -15426,6 +16230,7 @@ GameObject:
   - component: {fileID: 7409814013710709733}
   - component: {fileID: 912940099909167851}
   - component: {fileID: 7416761026944240175}
+  - component: {fileID: 480709215662416597}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (7)
   m_TagString: Untagged
@@ -15507,6 +16312,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &480709215662416597
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3569825089371292940}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3619399672839627117
 GameObject:
   m_ObjectHideFlags: 0
@@ -15518,6 +16339,7 @@ GameObject:
   - component: {fileID: 4268775379361251493}
   - component: {fileID: 6312166815670439889}
   - component: {fileID: 6702555965115688910}
+  - component: {fileID: 3752134478608734383}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (2)
   m_TagString: Untagged
@@ -15586,6 +16408,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &3752134478608734383
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619399672839627117}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &3621569448329216455
 GameObject:
   m_ObjectHideFlags: 0
@@ -15755,6 +16593,7 @@ GameObject:
   - component: {fileID: 4034268086510776780}
   - component: {fileID: 5895283761713764921}
   - component: {fileID: 1222714280957723370}
+  - component: {fileID: 2027988393582369887}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (11)
   m_TagString: Untagged
@@ -15823,6 +16662,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &2027988393582369887
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635605439729698827}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &3670179249751222672
 GameObject:
   m_ObjectHideFlags: 0
@@ -16480,6 +17335,7 @@ GameObject:
   - component: {fileID: 8987419594302444285}
   - component: {fileID: 8098430657920628372}
   - component: {fileID: 913839972769486407}
+  - component: {fileID: 6316738520278711030}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (5)
   m_TagString: Untagged
@@ -16561,6 +17417,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &6316738520278711030
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879621179759095789}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3880224576080888616
 GameObject:
   m_ObjectHideFlags: 0
@@ -17455,6 +18327,7 @@ GameObject:
   - component: {fileID: 152886121220074577}
   - component: {fileID: 8474611383369443223}
   - component: {fileID: 6925175264055150592}
+  - component: {fileID: 7036753340561303073}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (11)
   m_TagString: Untagged
@@ -17540,6 +18413,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &7036753340561303073
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4176440216101737006}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4230408612380501091
 GameObject:
   m_ObjectHideFlags: 0
@@ -17978,6 +18867,7 @@ GameObject:
   - component: {fileID: 6504061255332670842}
   - component: {fileID: 7729687505242988724}
   - component: {fileID: 6059796888242916690}
+  - component: {fileID: 1572818798633968431}
   m_Layer: 0
   m_Name: SM_Bld_Warehouse_01 (2)
   m_TagString: Untagged
@@ -18059,6 +18949,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.718964, y: 9.156791, z: 22.609535}
   m_Center: {x: 0, y: 4.5783954, z: 0}
+--- !u!208 &1572818798633968431
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473033957319813969}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 10.859, y: 4.578, z: 11.305}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 4.578, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4497926891473711989
 GameObject:
   m_ObjectHideFlags: 0
@@ -18736,6 +19642,7 @@ GameObject:
   - component: {fileID: 5112032030957426152}
   - component: {fileID: 1499597859271157518}
   - component: {fileID: 3505056000293255232}
+  - component: {fileID: 7214166860313745319}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (3)
   m_TagString: Untagged
@@ -18817,6 +19724,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &7214166860313745319
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752499558585103169}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4753131458515434653
 GameObject:
   m_ObjectHideFlags: 0
@@ -18987,6 +19910,7 @@ GameObject:
   - component: {fileID: 7460936996753203623}
   - component: {fileID: 923762158528666098}
   - component: {fileID: 3621161946495139456}
+  - component: {fileID: 3474909388751284900}
   m_Layer: 0
   m_Name: SM_Bld_Warehouse_01 (1)
   m_TagString: Untagged
@@ -19068,6 +19992,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.718964, y: 9.156791, z: 22.609535}
   m_Center: {x: 0, y: 4.5783954, z: 0}
+--- !u!208 &3474909388751284900
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4815688016111056595}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 10.859, y: 4.578, z: 11.305}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 4.578, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4817607961144399042
 GameObject:
   m_ObjectHideFlags: 0
@@ -19360,6 +20300,7 @@ GameObject:
   - component: {fileID: 7363442752494828155}
   - component: {fileID: 8454056841887321951}
   - component: {fileID: 2076561216133136303}
+  - component: {fileID: 8588883170667758761}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (9)
   m_TagString: Untagged
@@ -19434,6 +20375,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8588883170667758761
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045221503760782655}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &5065762759447058681
 GameObject:
   m_ObjectHideFlags: 0
@@ -19745,6 +20702,7 @@ GameObject:
   - component: {fileID: 3429339018247800072}
   - component: {fileID: 7923558539274613452}
   - component: {fileID: 3375441377927011995}
+  - component: {fileID: 8604566302743154318}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (1)
   m_TagString: Untagged
@@ -19819,6 +20777,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8604566302743154318
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5240246490574826869}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &5285422947303972664
 GameObject:
   m_ObjectHideFlags: 0
@@ -19960,6 +20934,7 @@ GameObject:
   - component: {fileID: 75195528686248544}
   - component: {fileID: 5924393518113054361}
   - component: {fileID: 5335492910791223876}
+  - component: {fileID: 1631092284339920714}
   m_Layer: 0
   m_Name: SM_Prop_Container_01
   m_TagString: Untagged
@@ -20045,6 +21020,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &1631092284339920714
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335492910791223877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5341016441721511096
 GameObject:
   m_ObjectHideFlags: 0
@@ -20186,6 +21177,7 @@ GameObject:
   - component: {fileID: 2881655732881148813}
   - component: {fileID: 847670186590183673}
   - component: {fileID: 7802072803655199942}
+  - component: {fileID: 6772926574374012545}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (25)
   m_TagString: Untagged
@@ -20271,6 +21263,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6772926574374012545
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371256608849952016}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5373886824195623043
 GameObject:
   m_ObjectHideFlags: 0
@@ -20438,6 +21446,7 @@ GameObject:
   - component: {fileID: 6766387490805326280}
   - component: {fileID: 6507477615082328551}
   - component: {fileID: 5442589383014975980}
+  - component: {fileID: 9183087441638294406}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (9)
   m_TagString: Untagged
@@ -20506,6 +21515,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &9183087441638294406
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373996531669025883}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &5398206114969541206
 GameObject:
   m_ObjectHideFlags: 0
@@ -20676,6 +21701,7 @@ GameObject:
   - component: {fileID: 232166724151469625}
   - component: {fileID: 2688043008094541122}
   - component: {fileID: 8871179775578563957}
+  - component: {fileID: 7916575295432182313}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (20)
   m_TagString: Untagged
@@ -20761,6 +21787,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &7916575295432182313
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426913941896749137}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5427432308650327146
 GameObject:
   m_ObjectHideFlags: 0
@@ -20882,6 +21924,7 @@ GameObject:
   - component: {fileID: 5450631380824730298}
   - component: {fileID: 5450631380825729146}
   - component: {fileID: 5450631380814071162}
+  - component: {fileID: 7860643192683675932}
   m_Layer: 0
   m_Name: CrossT
   m_TagString: Untagged
@@ -20971,6 +22014,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7860643192683675932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5450631380823471802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: cc2f1e8151e15764da7035b6d5ccacbd, type: 2}
 --- !u!1 &5453123391014272181
 GameObject:
   m_ObjectHideFlags: 0
@@ -21409,6 +22481,7 @@ GameObject:
   - component: {fileID: 7772594721282386906}
   - component: {fileID: 7152408982519542292}
   - component: {fileID: 1609532992498327185}
+  - component: {fileID: 6606582488396430878}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (28)
   m_TagString: Untagged
@@ -21494,6 +22567,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6606582488396430878
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694493785853616198}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5707228554252713397
 GameObject:
   m_ObjectHideFlags: 0
@@ -22535,6 +23624,7 @@ GameObject:
   - component: {fileID: 7930731562228172444}
   - component: {fileID: 6924597087675570228}
   - component: {fileID: 7310632743038553515}
+  - component: {fileID: 5328276019767535652}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_Destroyed_01 (5)
   m_TagString: Untagged
@@ -22604,6 +23694,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &5328276019767535652
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980422726848413094}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5570002, y: 1.5600001, z: 3.8400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.007, y: 1.4100001, z: 0.293}
+  m_TimeToStationary: 0.5
 --- !u!1 &5981414802215852426
 GameObject:
   m_ObjectHideFlags: 0
@@ -22647,6 +23753,7 @@ GameObject:
   - component: {fileID: 8892483528013437621}
   - component: {fileID: 2101753870329515622}
   - component: {fileID: 6201091933874374980}
+  - component: {fileID: 2016269908564753801}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (29)
   m_TagString: Untagged
@@ -22732,6 +23839,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &2016269908564753801
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995423610941288089}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6007013134376078670
 GameObject:
   m_ObjectHideFlags: 0
@@ -23201,6 +24324,7 @@ GameObject:
   - component: {fileID: 8982461131611930054}
   - component: {fileID: 7952238532127556956}
   - component: {fileID: 3300990837585441181}
+  - component: {fileID: 4986530067318521174}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (12)
   m_TagString: Untagged
@@ -23282,6 +24406,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &4986530067318521174
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6175939501983604498}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6181941139295094001
 GameObject:
   m_ObjectHideFlags: 0
@@ -23294,6 +24434,7 @@ GameObject:
   - component: {fileID: 6983184796441131058}
   - component: {fileID: 6360161763142578573}
   - component: {fileID: 8896860407170663733}
+  - component: {fileID: 1491450222620927764}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (8)
   m_TagString: Untagged
@@ -23375,6 +24516,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &1491450222620927764
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181941139295094001}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6184416947028965421
 GameObject:
   m_ObjectHideFlags: 0
@@ -23625,6 +24782,7 @@ GameObject:
   - component: {fileID: 4353165635902237408}
   - component: {fileID: 9105682182205701400}
   - component: {fileID: 1371448746936865077}
+  - component: {fileID: 5930435984341656759}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (23)
   m_TagString: Untagged
@@ -23710,6 +24868,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &5930435984341656759
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224405302443527759}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6349006455172857023
 GameObject:
   m_ObjectHideFlags: 0
@@ -24051,6 +25225,7 @@ GameObject:
   - component: {fileID: 6954699858360591019}
   - component: {fileID: 3065905460215580741}
   - component: {fileID: 8008810146389863056}
+  - component: {fileID: 2202097371101679531}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (3)
   m_TagString: Untagged
@@ -24125,6 +25300,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &2202097371101679531
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417710518418112665}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &6420335695232592134
 GameObject:
   m_ObjectHideFlags: 0
@@ -24137,6 +25328,7 @@ GameObject:
   - component: {fileID: 9137785322949638352}
   - component: {fileID: 2303674470479554984}
   - component: {fileID: 4189777860065795375}
+  - component: {fileID: 5199267364682424020}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (15)
   m_TagString: Untagged
@@ -24222,6 +25414,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &5199267364682424020
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420335695232592134}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6467477452219138921
 GameObject:
   m_ObjectHideFlags: 0
@@ -24233,6 +25441,7 @@ GameObject:
   - component: {fileID: 3145528459639419387}
   - component: {fileID: 3666958411713773441}
   - component: {fileID: 5920556126393697914}
+  - component: {fileID: 8746597229630073503}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (10)
   m_TagString: Untagged
@@ -24307,6 +25516,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8746597229630073503
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6467477452219138921}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &6501717723854964196
 GameObject:
   m_ObjectHideFlags: 0
@@ -24319,6 +25544,7 @@ GameObject:
   - component: {fileID: 5712034935770093099}
   - component: {fileID: 410122105080442513}
   - component: {fileID: 3115436015248229033}
+  - component: {fileID: 6651062577990874191}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (11)
   m_TagString: Untagged
@@ -24400,6 +25626,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &6651062577990874191
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6501717723854964196}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6525966977724914764
 GameObject:
   m_ObjectHideFlags: 0
@@ -25354,6 +26596,7 @@ GameObject:
   - component: {fileID: 993154829685191844}
   - component: {fileID: 7211870006962252758}
   - component: {fileID: 7307525413593427960}
+  - component: {fileID: 7783371551302436735}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (3)
   m_TagString: Untagged
@@ -25422,6 +26665,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &7783371551302436735
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6960119919449075604}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &6965904356696811784
 GameObject:
   m_ObjectHideFlags: 0
@@ -25433,6 +26692,7 @@ GameObject:
   - component: {fileID: 7687757743173550443}
   - component: {fileID: 2874163347681063819}
   - component: {fileID: 6743204644696800037}
+  - component: {fileID: 3960060832232815368}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (6)
   m_TagString: Untagged
@@ -25501,6 +26761,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &3960060832232815368
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965904356696811784}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &6969198794523610568
 GameObject:
   m_ObjectHideFlags: 0
@@ -25513,6 +26789,7 @@ GameObject:
   - component: {fileID: 5999321163834744381}
   - component: {fileID: 7931781858409330951}
   - component: {fileID: 4002255060984415935}
+  - component: {fileID: 6718833553754950125}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (16)
   m_TagString: Untagged
@@ -25598,6 +26875,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6718833553754950125
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969198794523610568}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7032533508220807550
 GameObject:
   m_ObjectHideFlags: 0
@@ -26429,6 +27722,7 @@ GameObject:
   - component: {fileID: 5765604329918281314}
   - component: {fileID: 3247807320192565414}
   - component: {fileID: 2226677469577183812}
+  - component: {fileID: 1243565032083515264}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (8)
   m_TagString: Untagged
@@ -26497,6 +27791,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &1243565032083515264
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7147163587675591242}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &7200396206094150994
 GameObject:
   m_ObjectHideFlags: 0
@@ -26812,6 +28122,7 @@ GameObject:
   - component: {fileID: 3306836188503080118}
   - component: {fileID: 7935531985612113671}
   - component: {fileID: 9092450377552316494}
+  - component: {fileID: 2570176360429374497}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (21)
   m_TagString: Untagged
@@ -26897,6 +28208,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &2570176360429374497
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7279628010517759714}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7323836006592425156
 GameObject:
   m_ObjectHideFlags: 0
@@ -27411,6 +28738,7 @@ GameObject:
   - component: {fileID: 5634900114653379283}
   - component: {fileID: 6969785668611246373}
   - component: {fileID: 951527135137467892}
+  - component: {fileID: 130924043378570547}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (2)
   m_TagString: Untagged
@@ -27485,6 +28813,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &130924043378570547
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418274757940969374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &7420000840756745566
 GameObject:
   m_ObjectHideFlags: 0
@@ -27497,6 +28841,7 @@ GameObject:
   - component: {fileID: 34223830908042768}
   - component: {fileID: 5265108548496263606}
   - component: {fileID: 934634890379346442}
+  - component: {fileID: 686762246807045080}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (8)
   m_TagString: Untagged
@@ -27582,6 +28927,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &686762246807045080
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7420000840756745566}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7425995949620711949
 GameObject:
   m_ObjectHideFlags: 0
@@ -27972,6 +29333,7 @@ GameObject:
   - component: {fileID: 6527154263418303134}
   - component: {fileID: 3144716468916878959}
   - component: {fileID: 7177265185384425415}
+  - component: {fileID: 6316122754809125367}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (24)
   m_TagString: Untagged
@@ -28057,6 +29419,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &6316122754809125367
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559780295235846662}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7563439771562884745
 GameObject:
   m_ObjectHideFlags: 0
@@ -28555,6 +29933,7 @@ GameObject:
   - component: {fileID: 8765092378550072113}
   - component: {fileID: 5305067103720229260}
   - component: {fileID: 429798814046217290}
+  - component: {fileID: 4427573745009410919}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (19)
   m_TagString: Untagged
@@ -28640,6 +30019,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &4427573745009410919
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613718892417951793}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7686864459729489032
 GameObject:
   m_ObjectHideFlags: 0
@@ -28651,6 +30046,7 @@ GameObject:
   - component: {fileID: 5685824580519661259}
   - component: {fileID: 5400567295980472973}
   - component: {fileID: 1206560844921875768}
+  - component: {fileID: 3263575890676886331}
   m_Layer: 0
   m_Name: SM_Veh_Car_Destroyed_01 (4)
   m_TagString: Untagged
@@ -28719,6 +30115,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &3263575890676886331
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7686864459729489032}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.047, y: 0.758, z: 2.289}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.007, y: 0.73300004, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &7708452382012820462
 GameObject:
   m_ObjectHideFlags: 0
@@ -29673,6 +31085,7 @@ GameObject:
   - component: {fileID: 7512115806822701880}
   - component: {fileID: 1698388956510110425}
   - component: {fileID: 17001117430560521}
+  - component: {fileID: 1714241453071547220}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (14)
   m_TagString: Untagged
@@ -29758,6 +31171,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &1714241453071547220
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7836574985105138095}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7836657446573117095
 GameObject:
   m_ObjectHideFlags: 0
@@ -29769,6 +31198,7 @@ GameObject:
   - component: {fileID: 424164135076743472}
   - component: {fileID: 8223616787755111216}
   - component: {fileID: 5304464062654615999}
+  - component: {fileID: 8935061777661962524}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (11)
   m_TagString: Untagged
@@ -29843,6 +31273,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8935061777661962524
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7836657446573117095}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &7895574744461416050
 GameObject:
   m_ObjectHideFlags: 0
@@ -30701,6 +32147,7 @@ GameObject:
   - component: {fileID: 6541123162093078918}
   - component: {fileID: 4274499208485296932}
   - component: {fileID: 7906957460970319010}
+  - component: {fileID: 5350164053212994992}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (22)
   m_TagString: Untagged
@@ -30786,6 +32233,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &5350164053212994992
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332409491561227615}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8342744093673084901
 GameObject:
   m_ObjectHideFlags: 0
@@ -31164,6 +32627,7 @@ GameObject:
   - component: {fileID: 4469505814525125076}
   - component: {fileID: 7870698616197471533}
   - component: {fileID: 443443665416138949}
+  - component: {fileID: 8279741358254324922}
   m_Layer: 0
   m_Name: StreetLamp2_Short (Black)
   m_TagString: Untagged
@@ -31248,6 +32712,22 @@ CapsuleCollider:
   m_Height: 3.543503
   m_Direction: 1
   m_Center: {x: 0, y: 1.7717515, z: 0.0043095946}
+--- !u!208 &8279741358254324922
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8432568898935187953}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.1, y: 1.7720001, z: 0.513}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.7720001, z: 0.41300002}
+  m_TimeToStationary: 0.5
 --- !u!1 &8445188951775858312
 GameObject:
   m_ObjectHideFlags: 0
@@ -31633,6 +33113,7 @@ GameObject:
   - component: {fileID: 5914262651901623384}
   - component: {fileID: 2619484360555725552}
   - component: {fileID: 8805950410867892316}
+  - component: {fileID: 8060644569300305632}
   m_Layer: 0
   m_Name: SM_Veh_German_Tank_Destroyed_01 (2)
   m_TagString: Untagged
@@ -31702,6 +33183,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8060644569300305632
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8580813833133154249}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5570002, y: 1.5600001, z: 3.8400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.007, y: 1.4100001, z: 0.293}
+  m_TimeToStationary: 0.5
 --- !u!1 &8608889682030411916
 GameObject:
   m_ObjectHideFlags: 0
@@ -32255,6 +33752,7 @@ GameObject:
   - component: {fileID: 8682511456018866278}
   - component: {fileID: 8682511456019866278}
   - component: {fileID: 8682511456029183910}
+  - component: {fileID: 2651312569211023950}
   m_Layer: 0
   m_Name: Street1Lane40m
   m_TagString: Untagged
@@ -32343,6 +33841,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2651312569211023950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8682511456021806182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 6feba9bc8395ed64a8e9dd4bf6d91b20, type: 2}
 --- !u!1 &8708269220072845919
 GameObject:
   m_ObjectHideFlags: 0
@@ -33061,6 +34588,7 @@ GameObject:
   - component: {fileID: 4600089555358941159}
   - component: {fileID: 6403286982889334535}
   - component: {fileID: 3690597906384829176}
+  - component: {fileID: 4353971536638016049}
   m_Layer: 0
   m_Name: SM_Prop_Container_01 (2)
   m_TagString: Untagged
@@ -33146,6 +34674,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4546385, y: 2.6064646, z: 6.190952}
   m_Center: {x: -0.00032788515, y: 1.3032326, z: 0}
+--- !u!208 &4353971536638016049
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069638554200551800}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2270001, y: 1.3030001, z: 3.095}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.3030001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &9079558469037177213
 GameObject:
   m_ObjectHideFlags: 0
@@ -33157,6 +34701,7 @@ GameObject:
   - component: {fileID: 1442995506217090065}
   - component: {fileID: 8568377364286222369}
   - component: {fileID: 7748413682597880100}
+  - component: {fileID: 7270720609717635084}
   m_Layer: 0
   m_Name: SM_Veh_Car_Clean_01 (4)
   m_TagString: Untagged
@@ -33231,6 +34776,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &7270720609717635084
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079558469037177213}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0320001, y: 0.708, z: 2.288}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.006, y: 0.8880001, z: 0.081}
+  m_TimeToStationary: 0.5
 --- !u!1 &9099285750030024944
 GameObject:
   m_ObjectHideFlags: 0
@@ -33384,6 +34945,7 @@ GameObject:
   - component: {fileID: 2428401655400894222}
   - component: {fileID: 5971474910086736724}
   - component: {fileID: 2618572721003048726}
+  - component: {fileID: 317699594989019719}
   m_Layer: 0
   m_Name: SM_Bld_Tent_01 (10)
   m_TagString: Untagged
@@ -33465,6 +35027,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.760675, y: 3.8680751, z: 8.972125}
   m_Center: {x: 0.0000019073486, y: 1.9340378, z: -0.00000047683716}
+--- !u!208 &317699594989019719
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127012649868432757}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.88, y: 1.9340001, z: 4.486}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9340001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &9169428089612675314
 GameObject:
   m_ObjectHideFlags: 0
