@@ -19,7 +19,7 @@ public class MapGenerator : MonoBehaviour
     public GameObject[] otherTowns;
     public GameObject[] grassTiles;
 
-    List<Vector3> otherTownPos;
+    public List<Vector3> otherTownPos;
 
     [Header("Noise")]
     [Range(10, 1000)]
@@ -120,7 +120,7 @@ public class MapGenerator : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < otherTowns.Length; i++)
+        for (int i = 0; i < otherTownPos.Count; i++)
         {
             GameObject newTown = Instantiate(otherTowns[i], transform);
             newTown.transform.position = otherTownPos[i];
