@@ -8,40 +8,46 @@ public class Trainer : MonoBehaviour
     public GameObject Menu;
     private int slot;
     public GameObject[] Upgardes;
+
+    void Start()
+    {
+        Player = FindObjectOfType<PlayerStats>().gameObject;
+    }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             Menu.SetActive(true);
-            Player = other.gameObject;
-        }
-        if (Player.GetComponent<PlayerStats>().progressionLevel >= 25)
-        {
-            Upgardes[0].SetActive(false);
-        }
-        if(Player.GetComponent<PlayerStats>().progressionLevel >= 50)
-        {
-            Upgardes[1].SetActive(false);
-        }
-        if(Player.GetComponent<PlayerStats>().progressionLevel >= 75)
-        {
-            Upgardes[2].SetActive(false);
+
+            if (Player.GetComponent<PlayerStats>().progressionLevel >= 1)
+            {
+                Upgardes[0].SetActive(false);
+            }
+            if (Player.GetComponent<PlayerStats>().progressionLevel >= 2)
+            {
+                Upgardes[1].SetActive(false);
+            }
+            if (Player.GetComponent<PlayerStats>().progressionLevel >= 3)
+            {
+                Upgardes[2].SetActive(false);
+            }
         }
     }
 
     public void NewPerc(int index)
     {
-        if(Player.GetComponent<PlayerStats>().progressionLevel >= 25 || slot < 1)
+        if(Player.GetComponent<PlayerStats>().progressionLevel >= 1 || slot < 1)
         {
             slot++;
             AddFirstPerc(index);
         }
-        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 50 || slot < 2)
+        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 2 || slot < 2)
         {
             slot++;
             AddSecPerc(index);
         }
-        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 75 || slot < 3)
+        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 3 || slot < 3)
         {
             slot++;
             AddThrPerc(index);

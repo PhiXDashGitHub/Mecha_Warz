@@ -1,14 +1,21 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     PlayerCharacter character;
+    public Slider magicMeter;
+    public TextMeshProUGUI levelMeter;
 
+    public int magic;
     public int level;
     public int progressionLevel;
+
+    public int magicToLevelUp;
 
     void Awake()
     {
@@ -37,5 +44,22 @@ public class PlayerStats : MonoBehaviour
         character.bludgeoningResistance = progressionLevel / 4.0f;
         character.slashingResistance = progressionLevel / 4.0f;
         character.poisonResistance = progressionLevel / 4.0f;
+
+        //Magic & Level
+        if (magic >= magicToLevelUp)
+        {
+            level++;
+            magic -= magicToLevelUp;
+        }
+
+        //UI
+        magicMeter.maxValue = magicToLevelUp;
+        magicMeter.value = magic;
+        levelMeter.text = level.ToString();
+    }
+
+    public void AddMagic(int amount)
+    {
+        magic += amount;
     }
 }
