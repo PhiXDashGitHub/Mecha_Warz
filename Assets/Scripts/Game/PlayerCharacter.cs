@@ -61,14 +61,26 @@ public class PlayerCharacter : MonoBehaviour
         healthSlider.value = health;
         magicShieldSlider.maxValue = maxMagicShield;
         magicShieldSlider.value = magicShield;
+
+        if (health <= 0)
+        {
+            Dead();
+        }
     }
 
     public void GetHurt(float damage)
     {
-        float actualDamage = damage - magicShield;
-        actualDamage = Mathf.Clamp(actualDamage, 0, damage);
+        float actualDamage = damage * (1.5f - magicShield / 100);
+        Debug.Log(actualDamage);
+        magicShield -= damage;
 
         health -= actualDamage;
+    }
+
+    public void Dead()
+    {
+        GetComponent<PlayerMovement>().enabled = false;
+        FindObjectOfType<TurretControl>().enabled = false;
     }
 
     IEnumerator RegenerateHealth()
