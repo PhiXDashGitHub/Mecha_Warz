@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     public float range;
     public float shootTime;
     public float angularSpeed;
+    public int magicForPlayer;
 
     Transform player;
 
@@ -144,6 +145,7 @@ public class Enemy : MonoBehaviour
 
     public void Dead()
     {
+        player.GetComponent<PlayerStats>().AddMagic(magicForPlayer);
         GameObject newParticles = Instantiate(deathParticles, null);
         newParticles.transform.position = transform.position;
         Destroy(newParticles, 3);
