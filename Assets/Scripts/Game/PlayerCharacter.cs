@@ -18,6 +18,7 @@ public class PlayerCharacter : MonoBehaviour
     private float enlightenment;
     public float maxenergy;
     public float energy;
+
     //Resistance
     public float fireResistance;
     public float waterResistance;
@@ -52,12 +53,18 @@ public class PlayerCharacter : MonoBehaviour
         shield = Mathf.Clamp(shield, 0, 1);
         toughness = Mathf.Clamp(toughness, 0, 25);
         enlightenment = Mathf.Clamp(enlightenment, 0, 25);
-        HealthSlider.GetComponent<Slider>().maxValue = maxHealth;
-        HealthSlider.GetComponent<Slider>().value = health;
 
-
+        //Set UI
+        healthSlider.GetComponent<Slider>().maxValue = maxHealth;
         healthSlider.GetComponent<Slider>().value = health;
+    }
 
+    public void GetHurt(float damage)
+    {
+        float actualDamage = damage - magicShield;
+        actualDamage = Mathf.Clamp(actualDamage, 0, damage);
+
+        health -= actualDamage;
     }
 
     IEnumerator RegenerateHealth()
@@ -97,7 +104,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         if (other.CompareTag("Weapon") && other.GetComponent<Weapon>())
         {
-            health -= other.GetComponent<Weapon>().Damage;
+            GetHurt(other.GetComponent<Weapon>().Damage);
             Destroy(other.gameObject);
         }
     }

@@ -18,6 +18,7 @@ public class ShootWeaponRange : MonoBehaviour
     }
     void Update()
     {
+        Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
         energyslider.value = Energy;
         this.GetComponent<PlayerCharacter>().energy = Energy;
         this.GetComponent<PlayerCharacter>().maxenergy = MaxEnergy;

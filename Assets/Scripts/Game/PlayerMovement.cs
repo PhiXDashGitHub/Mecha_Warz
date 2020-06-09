@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public new Rigidbody rigidbody;
-    public float transformSpeed;
+    public float transformWalkSpeed;
+    public float transformRunSpeed;
+    public float transformLerpTime;
+    float transformSpeed;
     public float angularSpeed;
     public float transitionSpeed;
 
@@ -20,7 +23,17 @@ public class PlayerMovement : MonoBehaviour
 
         direction = Vector3.ClampMagnitude(Vector3.right * xInput + Vector3.forward * yInput, 1);
 
-        animator.SetFloat("Move", direction != Vector3.zero ? Mathf.Lerp(animator.GetFloat("Move"), 1, transitionSpeed * Time.deltaTime) : Mathf.Lerp(animator.GetFloat("Move"), 0, transitionSpeed * Time.deltaTime));
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            transformSpeed = Mathf.Lerp(transformSpeed, transformRunSpeed, transformLerpTime * Time.deltaTime);
+            GetComponent<PlayerCharacter>().energy -= Time.deltaTime;
+        }
+        else
+        {
+            transformSpeed = Mathf.Lerp(transformSpeed, transformWalkSpeed, transformLerpTime * Time.deltaTime);
+        }
+
+        animator.SetFloat("Move", direction != Vector3.zero ? Mathf.Lerp(animator.GetFloat("Move"), Input.GetKey(KeyCode.LeftShift) ? 2 : 1, transitionSpeed * Time.deltaTime) : Mathf.Lerp(animator.GetFloat("Move"), 0, transitionSpeed * Time.deltaTime * 2));
     }
 
     void FixedUpdate()

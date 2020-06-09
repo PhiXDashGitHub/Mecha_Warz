@@ -7,10 +7,13 @@ public class Enemy : MonoBehaviour
 {
     public Transform objectToRotate;
     public GameObject laserObject;
+    public GameObject deathParticles;
     public NavMeshAgent agent;
 
     public enum EnemyType { Walking, Stationary, Boss }
+    public enum BossElement { Fire, Ice }
     public EnemyType type;
+    public BossElement bossElement;
 
     public int Maxhealth;
     int health;
@@ -79,6 +82,28 @@ public class Enemy : MonoBehaviour
                 shooting = false;
             }
         }
+        else if (type == EnemyType.Boss)
+        {
+            //If Player is in Range
+            if (Vector3.Distance(transform.position, player.position) < range)
+            {
+                //Walk towards Player
+                agent.SetDestination(player.position);
+
+                //Shoot
+                if (!shooting)
+                {
+                    shooting = true;
+                    StartCoroutine(Shoot());
+                }
+            }
+            else
+            {
+                //Idle Animation
+                agent.SetDestination(transform.position);
+                shooting = false;
+            }
+        }
     }
 
     IEnumerator Shoot()
@@ -119,6 +144,9 @@ public class Enemy : MonoBehaviour
 
     public void Dead()
     {
+        GameObject newParticles = Instantiate(deathParticles, null);
+        newParticles.transform.position = transform.position;
+        Destroy(newParticles, 3);
         Destroy(gameObject);
     }
 }

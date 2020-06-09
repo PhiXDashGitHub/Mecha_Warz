@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
-  m_Dithering: 0
+  m_Dithering: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
@@ -938,7 +938,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 852123879}
-  transformSpeed: 5
+  transformWalkSpeed: 5
+  transformRunSpeed: 10
+  transformLerpTime: 2
   angularSpeed: 3
   transitionSpeed: 3
   animator: {fileID: 3468069646475670318}
@@ -973,8 +975,8 @@ MonoBehaviour:
   maxShield: 0
   maxToughness: 0
   maxEnlightenment: 0
-  maxenergy: 0
-  energy: 0
+  maxenergy: 20
+  energy: 20
   fireResistance: 0
   waterResistance: 0
   iceResistance: 0
@@ -28304,6 +28306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6647094638521172654, guid: 6be2a02ab50c1194da19f579310f57fd,
+        type: 3}
+      propertyPath: deathParticles
+      value: 
+      objectReference: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
     - target: {fileID: 6647094638521172658, guid: 6be2a02ab50c1194da19f579310f57fd,
         type: 3}
       propertyPath: m_LocalPosition.x
