@@ -69,4 +69,11 @@ public class PlayerStats : MonoBehaviour
     {
         magic += amount;
     }
+
+    public void SaveVariables()
+    {
+        PlayerPrefs.SetInt(gameObject.name + "Magic", magic);
+        PlayerPrefs.SetInt(gameObject.name + "Level", level);
+        PlayerPrefs.SetInt(gameObject.name + "ProgressionLevel", progressionLevel);
+    }
 }

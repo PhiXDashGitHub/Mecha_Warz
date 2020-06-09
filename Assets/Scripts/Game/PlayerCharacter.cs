@@ -139,4 +139,22 @@ public class PlayerCharacter : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+    public void SaveVariables()
+    {
+        PlayerPrefs.SetFloat(gameObject.name + "MaxHealth", maxHealth);
+        PlayerPrefs.SetFloat(gameObject.name + "MaxMagicShield", maxMagicShield);
+        PlayerPrefs.SetFloat(gameObject.name + "MaxShield", maxShield);
+        PlayerPrefs.SetFloat(gameObject.name + "MaxToughness", maxToughness);
+        PlayerPrefs.SetFloat(gameObject.name + "MaxEnlightenment", maxEnlightenment);
+        PlayerPrefs.SetFloat(gameObject.name + "MaxEnergy", maxenergy);
+        PlayerPrefs.SetFloat(gameObject.name + "FireResistance", fireResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "WaterResistance", waterResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "IceResistance", iceResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "ElectricResistance", electricResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "PiercingResistance", piercingResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "BludgeoningResistance", bludgeoningResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "SlashingResistance", slashingResistance);
+        PlayerPrefs.SetFloat(gameObject.name + "PoisonResistance", poisonResistance);
+    }
 }
