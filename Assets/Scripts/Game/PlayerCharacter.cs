@@ -35,6 +35,21 @@ public class PlayerCharacter : MonoBehaviour
 
     void Start()
     {
+        maxHealth = PlayerPrefs.GetFloat(gameObject.name + "MaxHealth");
+        maxMagicShield = PlayerPrefs.GetFloat(gameObject.name + "MaxMagicShield");
+        maxShield = PlayerPrefs.GetFloat(gameObject.name + "MaxShield");
+        maxToughness = PlayerPrefs.GetFloat(gameObject.name + "MaxToughness");
+        maxEnlightenment = PlayerPrefs.GetFloat(gameObject.name + "MaxEnlightenment");
+        maxenergy = PlayerPrefs.GetFloat(gameObject.name + "MaxEnergy");
+        fireResistance = PlayerPrefs.GetFloat(gameObject.name + "FireResistance");
+        waterResistance = PlayerPrefs.GetFloat(gameObject.name + "WaterResistance");
+        iceResistance = PlayerPrefs.GetFloat(gameObject.name + "IceResistance");
+        electricResistance = PlayerPrefs.GetFloat(gameObject.name + "ElectricResistance");
+        piercingResistance = PlayerPrefs.GetFloat(gameObject.name + "PiercingResistance");
+        bludgeoningResistance = PlayerPrefs.GetFloat(gameObject.name + "BludgeoningResistance");
+        slashingResistance = PlayerPrefs.GetFloat(gameObject.name + "SlashingResistance");
+        poisonResistance = PlayerPrefs.GetFloat(gameObject.name + "PoisonResistance");
+
         health = maxHealth;
         magicShield = maxMagicShield;
         shield = 1;

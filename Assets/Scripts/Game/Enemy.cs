@@ -107,7 +107,8 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        GameObject laser = Instantiate(laserObject, transform);
+        GameObject laser = Instantiate(laserObject, null);
+        laser.transform.localEulerAngles = objectToRotate.localEulerAngles;
         Destroy(laser, 5);
         yield return new WaitForSeconds(shootTime);
         StartCoroutine(Shoot());

@@ -22,6 +22,13 @@ public class PlayerStats : MonoBehaviour
         character = GetComponent<PlayerCharacter>();
     }
 
+    void Start()
+    {
+        magic = PlayerPrefs.GetInt(gameObject.name + "Magic");
+        level = PlayerPrefs.GetInt(gameObject.name + "Level");
+        progressionLevel = PlayerPrefs.GetInt(gameObject.name + "ProgressionLevel");
+    }
+
     void Update()
     {
         //Clamp Values
