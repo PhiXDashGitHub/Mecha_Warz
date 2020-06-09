@@ -18,7 +18,7 @@ public class PlayerCharacter : MonoBehaviour
     private float enlightenment;
     public float maxenergy;
     public float energy;
-
+    
     //Resistance
     public float fireResistance;
     public float waterResistance;
@@ -65,6 +65,7 @@ public class PlayerCharacter : MonoBehaviour
 
         healthSlider.maxValue = maxHealth;
         magicShieldSlider.maxValue = maxMagicShield;
+        StartCoroutine(Autosave());
     }
 
     void Update()
@@ -88,12 +89,13 @@ public class PlayerCharacter : MonoBehaviour
             Dead();
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SaveVariables();
-        }
     }
-
+    public IEnumerator Autosave()
+    {
+        SaveVariables();
+        yield return new WaitForSeconds(3);
+        StartCoroutine(Autosave());
+    }
     public void GetHurt(float damage)
     {
         float actualDamage = damage * (1.5f - magicShield / 100);

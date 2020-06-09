@@ -1754,10 +1754,10 @@ MonoBehaviour:
   agent: {fileID: 6647094638521172660}
   type: 1
   Maxhealth: 200
-  range: 10
+  range: 30
   shootTime: 1
   angularSpeed: 2
-  magicForPlayer: 1400
+  magicForPlayer: 70000
 --- !u!195 &6647094638521172660
 NavMeshAgent:
   m_ObjectHideFlags: 0

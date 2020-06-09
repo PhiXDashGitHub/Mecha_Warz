@@ -58,11 +58,11 @@ public class Trainer : MonoBehaviour
     {
         if(index == 1)
         {
-            Player.GetComponent<PlayerCharacter>().maxHealth *= 2;
+            Player.GetComponent<PlayerStats>().maxHealthbuff += 100;
         }
         else
         {
-            Player.GetComponent<PlayerCharacter>().maxShield += 10;
+            Player.GetComponent<PlayerStats>().maxShieldbuff += 20;
         }
     }
 
@@ -70,11 +70,11 @@ public class Trainer : MonoBehaviour
     {
         if (index == 1)
         {
-            Player.GetComponent<PlayerCharacter>().maxShield = 20;
+            Player.GetComponent<PlayerStats>().maxShieldbuff += 30;
         }
         else
         {
-            Player.GetComponent<PlayerCharacter>().maxenergy += 10;
+            Player.GetComponent<PlayerCharacter>().maxenergy += 50;
         }
     }
 
@@ -82,11 +82,11 @@ public class Trainer : MonoBehaviour
     {
         if (index == 1)
         {
-            Player.GetComponent<PlayerCharacter>().maxToughness += 20;
+            Player.GetComponent<PlayerStats>().maxToughnessbuff += 40;
         }
         else
         {
-            Player.GetComponent<PlayerCharacter>().maxEnlightenment += 100;
+            Player.GetComponent<PlayerStats>().maxEnlightenmentbuff += 100;
         }
     }
 }

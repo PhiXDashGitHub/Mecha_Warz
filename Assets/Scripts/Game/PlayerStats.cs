@@ -15,8 +15,15 @@ public class PlayerStats : MonoBehaviour
     public int magic;
     public int level;
     public int progressionLevel;
-
+    //
+    public int maxHealthbuff;
     public int magicToLevelUp;
+    public int maxMagicShieldbuff;
+    public int maxShieldbuff;
+    public int maxToughnessbuff;
+    public int maxEnlightenmentbuff;
+
+    private int[] buffs = new int[5] {0,0,0,0,0 };
 
     void Awake()
     {
@@ -29,6 +36,13 @@ public class PlayerStats : MonoBehaviour
         level = PlayerPrefs.GetInt(gameObject.name + "Level");
         progressionLevel = PlayerPrefs.GetInt(gameObject.name + "ProgressionLevel");
 
+        buffs = PlayerPrefsX.GetIntArray(gameObject.name + "Buffs");
+        maxHealthbuff = buffs[0];
+        maxMagicShieldbuff = buffs[1];
+        maxShieldbuff = buffs[2];
+        maxToughnessbuff = buffs[3];
+        maxEnlightenmentbuff = buffs[4];
+
         Color col = new Color();
 
         col.r = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")]).Split(':')[0]);
@@ -40,20 +54,38 @@ public class PlayerStats : MonoBehaviour
 
         block.SetColor("_BaseColor", col);
         meshRenderer.SetPropertyBlock(block);
+
+        StartCoroutine(Autosave());
     }
 
     void Update()
     {
+        buffs = new int[5] { maxHealthbuff, maxMagicShieldbuff, maxShieldbuff, maxToughnessbuff, maxEnlightenmentbuff};
+        if (level < 25)
+        {
+            progressionLevel = 0;
+        }
+        else if (level < 50 && level >= 25)
+        {
+            progressionLevel = 1;
+        }else if (level < 75 && level >= 50)
+        {
+            progressionLevel = 2;
+        }
+        else
+        {
+            progressionLevel = 3;
+        }
         //Clamp Values
         level = Mathf.Clamp(level, 1, 100);
         progressionLevel = Mathf.Clamp(progressionLevel, 0, 3);
-
+        
         //Character Stats
-        character.maxHealth = 100 + (level / 2);
-        character.maxMagicShield = 100 + (level / 2);
-        character.maxShield = 4 + (level / 10);
-        character.maxToughness = (level / 4) + 10 * progressionLevel;
-        character.maxEnlightenment = (level / 4) + 10 * progressionLevel;
+        character.maxHealth = 100 + (level / 2) + maxHealthbuff;
+        character.maxMagicShield = 100 + (level / 2) + maxMagicShieldbuff;
+        character.maxShield = 4 + (level / 10)+ maxShieldbuff;
+        character.maxToughness = (level / 4) + 10 * progressionLevel + maxToughnessbuff;
+        character.maxEnlightenment = (level / 4) + 10 * progressionLevel + maxEnlightenmentbuff;
 
         //Character Resistance
         character.fireResistance = progressionLevel / 4.0f;
@@ -77,10 +109,12 @@ public class PlayerStats : MonoBehaviour
         magicMeter.value = magic;
         levelMeter.text = level.ToString();
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SaveVariables();
-        }
+    }
+    public IEnumerator Autosave()
+    {
+        SaveVariables();
+        yield return new WaitForSeconds(3);
+        StartCoroutine(Autosave());
     }
 
     public void AddMagic(int amount)
@@ -93,5 +127,6 @@ public class PlayerStats : MonoBehaviour
         PlayerPrefs.SetInt(gameObject.name + "Magic", magic);
         PlayerPrefs.SetInt(gameObject.name + "Level", level);
         PlayerPrefs.SetInt(gameObject.name + "ProgressionLevel", progressionLevel);
+        PlayerPrefsX.SetIntArray(gameObject.name + "Buffs", buffs);
     }
 }

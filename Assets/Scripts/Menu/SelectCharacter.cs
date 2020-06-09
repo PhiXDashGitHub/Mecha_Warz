@@ -93,6 +93,14 @@ public class SelectCharacter : MonoBehaviour
     public void CreatCharacter()
     {
         string newcharname = CharName.GetComponent<TextMeshProUGUI>().text;
+        for (int i = 0; i < charnamestemp.Length; i++)
+        {
+            if (newcharname == charnamestemp[i])
+            {
+                newcharname += 1;
+            }
+        }
+        charnamestemp[index] = newcharname;
 
         PlayerPrefs.SetFloat(newcharname + "MaxHealth", 100);
         PlayerPrefs.SetFloat(newcharname + "MaxMagicShield", 100);
@@ -108,23 +116,15 @@ public class SelectCharacter : MonoBehaviour
         PlayerPrefs.SetFloat(newcharname + "BludgeoningResistance", 0);
         PlayerPrefs.SetFloat(newcharname + "SlashingResistance", 0);
         PlayerPrefs.SetFloat(newcharname + "PoisonResistance", 0);
-
         PlayerPrefs.SetInt(newcharname + "Magic", 0);
         PlayerPrefs.SetInt(newcharname + "Level", 1);
         PlayerPrefs.SetInt(newcharname + "ProgressionLevel", 0);
-
-        for (int i = 0; i< charnamestemp.Length;i ++)
-        {
-            if(newcharname == charnamestemp[i])
-            {
-                newcharname += 1;
-            }
-        }
-        charnamestemp[index] = newcharname;
+        PlayerPrefsX.SetIntArray(newcharname + "Buffs", new int[5] { 0, 0, 0, 0, 0 });
         PlayerPrefsX.SetStringArray("CharNames", charnamestemp);
         PlayerPrefs.SetInt("CharSex" + charnamestemp[index], CharSex);
         PlayerPrefs.SetString("CharClass" + charnamestemp[index], Class);
         PlayerPrefs.SetString("CharColor" + charnamestemp[index], CharacterSelect.mechcolor.r + ":" + CharacterSelect.mechcolor.g + ":" + CharacterSelect.mechcolor.b + ":" + CharacterSelect.mechcolor.a);
+
         StartGame(charnamestemp[index]);
     }
 
