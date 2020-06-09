@@ -33,6 +33,11 @@ public class PlayerCharacter : MonoBehaviour
     public Slider healthSlider;
     public Slider magicShieldSlider;
 
+    void Awake()
+    {
+        gameObject.name = PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")].ToString();
+    }
+
     void Start()
     {
         maxHealth = PlayerPrefs.GetFloat(gameObject.name + "MaxHealth");
@@ -70,6 +75,7 @@ public class PlayerCharacter : MonoBehaviour
         shield = Mathf.Clamp(shield, 0, 1);
         toughness = Mathf.Clamp(toughness, 0, 25);
         enlightenment = Mathf.Clamp(enlightenment, 0, 25);
+        energy = Mathf.Clamp(energy, 0, maxenergy);
 
         //Set UI
         healthSlider.maxValue = maxHealth;
@@ -80,6 +86,11 @@ public class PlayerCharacter : MonoBehaviour
         if (health <= 0)
         {
             Dead();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SaveVariables();
         }
     }
 

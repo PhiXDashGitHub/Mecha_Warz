@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
     PlayerCharacter character;
     public Slider magicMeter;
     public TextMeshProUGUI levelMeter;
+    public SkinnedMeshRenderer meshRenderer;
 
     public int magic;
     public int level;
@@ -27,6 +28,18 @@ public class PlayerStats : MonoBehaviour
         magic = PlayerPrefs.GetInt(gameObject.name + "Magic");
         level = PlayerPrefs.GetInt(gameObject.name + "Level");
         progressionLevel = PlayerPrefs.GetInt(gameObject.name + "ProgressionLevel");
+
+        Color col = new Color();
+
+        col.r = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")]).Split(':')[0]);
+        col.g = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")]).Split(':')[1]);
+        col.b = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")]).Split(':')[2]);
+        col.a = (float)Convert.ToDouble(PlayerPrefs.GetString("CharColor" + PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")]).Split(':')[3]);
+
+        var block = new MaterialPropertyBlock();
+
+        block.SetColor("_BaseColor", col);
+        meshRenderer.SetPropertyBlock(block);
     }
 
     void Update()
@@ -63,6 +76,11 @@ public class PlayerStats : MonoBehaviour
         magicMeter.maxValue = magicToLevelUp;
         magicMeter.value = magic;
         levelMeter.text = level.ToString();
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SaveVariables();
+        }
     }
 
     public void AddMagic(int amount)

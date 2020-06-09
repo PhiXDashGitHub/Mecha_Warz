@@ -93,6 +93,26 @@ public class SelectCharacter : MonoBehaviour
     public void CreatCharacter()
     {
         string newcharname = CharName.GetComponent<TextMeshProUGUI>().text;
+
+        PlayerPrefs.SetFloat(newcharname + "MaxHealth", 100);
+        PlayerPrefs.SetFloat(newcharname + "MaxMagicShield", 100);
+        PlayerPrefs.SetFloat(newcharname + "MaxShield", 4);
+        PlayerPrefs.SetFloat(newcharname + "MaxToughness", 0);
+        PlayerPrefs.SetFloat(newcharname + "MaxEnlightenment", 0);
+        PlayerPrefs.SetFloat(newcharname + "MaxEnergy", 100);
+        PlayerPrefs.SetFloat(newcharname + "FireResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "WaterResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "IceResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "ElectricResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "PiercingResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "BludgeoningResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "SlashingResistance", 0);
+        PlayerPrefs.SetFloat(newcharname + "PoisonResistance", 0);
+
+        PlayerPrefs.SetInt(newcharname + "Magic", 0);
+        PlayerPrefs.SetInt(newcharname + "Level", 1);
+        PlayerPrefs.SetInt(newcharname + "ProgressionLevel", 0);
+
         for (int i = 0; i< charnamestemp.Length;i ++)
         {
             if(newcharname == charnamestemp[i])
@@ -110,6 +130,7 @@ public class SelectCharacter : MonoBehaviour
 
     public void StartGame(string charname)
     {
+        PlayerPrefs.SetInt("SaveState", index);
         SceneManager.LoadScene(1);
     }
 
