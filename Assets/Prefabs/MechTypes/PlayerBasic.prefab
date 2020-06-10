@@ -6761,12 +6761,12 @@ GameObject:
   - component: {fileID: 7971563455227698901}
   - component: {fileID: 7971563455227698906}
   - component: {fileID: 7971563455227698905}
-  - component: {fileID: 7971563455227698904}
+  - component: {fileID: 5709007295882516035}
   - component: {fileID: 7971563455227698907}
   - component: {fileID: 4978835827135682589}
   - component: {fileID: 7971563455227698900}
   m_Layer: 0
-  m_Name: PlayerRange
+  m_Name: PlayerBasic
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6842,7 +6842,7 @@ MonoBehaviour:
   poisonResistance: 0
   healthSlider: {fileID: 7971563454397433635}
   magicShieldSlider: {fileID: 4978835828012454524}
---- !u!114 &7971563455227698904
+--- !u!114 &5709007295882516035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6851,17 +6851,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7971563455227698902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906d7f43572926e4f9b9ce5c0badb779, type: 3}
+  m_Script: {fileID: 11500000, guid: b72dc21689e9ea04d8f3c77d30b5eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Expolsion: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
-  Laser: {fileID: 6716722349938711241, guid: 79353d2e67f76e641b617bfe0f4f86ad, type: 3}
-  Gunparent:
-  - {fileID: 6809900316920663412}
-  - {fileID: 6809900316920663414}
+  weapon: {fileID: 6716722349938711241, guid: 79353d2e67f76e641b617bfe0f4f86ad, type: 3}
+  weapon2: {fileID: 381740676796353590, guid: d8f4ba74615c2b649982640d0eb21df7, type: 3}
+  isautomatic1: 1
+  isautomatic2: 0
   energyslider: {fileID: 7971563455919318431}
-  Energy: 20
-  MaxEnergy: 20
 --- !u!114 &7971563455227698907
 MonoBehaviour:
   m_ObjectHideFlags: 0
