@@ -1960,8 +1960,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af1b74b2d438d004b995ff88ee6ccaaa, type: 2}
+  m_sharedMaterial: {fileID: 9063546278343076427, guid: af1b74b2d438d004b995ff88ee6ccaaa,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6779,7 +6780,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7971563455227698902}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6959,6 +6960,7 @@ GameObject:
   - component: {fileID: 7971563455270409869}
   - component: {fileID: 7971563455270409870}
   - component: {fileID: 7971563455270409871}
+  - component: {fileID: 3637299150019127337}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -7053,6 +7055,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3637299150019127337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971563455270409864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f2dd88793afcb4e930fdd7445406cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attack1: {fileID: 8421179572308025212}
+  Attack2: {fileID: 4309687480302310097}
 --- !u!1 &7971563455507090323
 GameObject:
   m_ObjectHideFlags: 0
@@ -7255,6 +7271,7 @@ GameObject:
   - component: {fileID: 7971563456044923464}
   - component: {fileID: 7971563456044923470}
   - component: {fileID: 7971563456044923471}
+  - component: {fileID: 4309687480302310097}
   m_Layer: 5
   m_Name: Attack2
   m_TagString: Untagged
@@ -7307,7 +7324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 339e40b129e2c9349a91005678b548b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7317,6 +7334,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!111 &4309687480302310097
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971563456044923465}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 20eb3574415616f46b86bd4e3f8f6866, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 20eb3574415616f46b86bd4e3f8f6866, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7971563456304193886
 GameObject:
   m_ObjectHideFlags: 0
@@ -7328,6 +7361,7 @@ GameObject:
   - component: {fileID: 7971563456304193885}
   - component: {fileID: 7971563456304193859}
   - component: {fileID: 7971563456304193884}
+  - component: {fileID: 8421179572308025212}
   m_Layer: 5
   m_Name: Attack1
   m_TagString: Untagged
@@ -7380,7 +7414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5572c5895f1f81744af2b7fab7752d67, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7390,6 +7424,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!111 &8421179572308025212
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971563456304193886}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 20eb3574415616f46b86bd4e3f8f6866, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 20eb3574415616f46b86bd4e3f8f6866, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8446903756261182430
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ public class ShootWeaponRange : MonoBehaviour
         {
             GameObject go = Instantiate(Laser, Gunparent[Random.Range(0,Gunparent.Length)].transform.position, Gunparent[Random.Range(0, Gunparent.Length)].transform.rotation);
             Destroy(go, 5f);
-            Delay = Time.deltaTime * 20;
+            Delay = Time.deltaTime * 10;
             Energy -= Time.deltaTime * 10f;
         }
         else
