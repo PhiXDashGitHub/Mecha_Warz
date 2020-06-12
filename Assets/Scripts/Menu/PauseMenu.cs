@@ -36,14 +36,17 @@ public class PauseMenu : MonoBehaviour
         if (index == 0)
         {
             fullscreenmode = FullScreenMode.Windowed;
+            Screen.fullScreenMode = fullscreenmode;
         }
         else if (index == 1)
         {
             fullscreenmode = FullScreenMode.FullScreenWindow;
+            Screen.fullScreenMode = fullscreenmode;
         }
         else
         {
             fullscreenmode = FullScreenMode.ExclusiveFullScreen;
+            Screen.fullScreenMode = fullscreenmode;
         }
     }
     public void Quit()
