@@ -10,15 +10,18 @@ public class ShootWeaponRange : MonoBehaviour
     float Delay = 0;
     public Slider energyslider;
     public float Energy, MaxEnergy;
+
     public void Start()
     {
         energyslider.maxValue = MaxEnergy;
         Energy = this.GetComponent<PlayerCharacter>().energy;
         MaxEnergy = this.GetComponent<PlayerCharacter>().maxenergy;
     }
+
     void Update()
     {
         Energy = Mathf.Clamp(Energy, 0, MaxEnergy);
+        energyslider.maxValue = MaxEnergy;
         energyslider.value = Energy;
         this.GetComponent<PlayerCharacter>().energy = Energy;
         this.GetComponent<PlayerCharacter>().maxenergy = MaxEnergy;

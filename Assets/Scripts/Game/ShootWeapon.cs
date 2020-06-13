@@ -19,6 +19,7 @@ public class ShootWeapon : MonoBehaviour
 
     void Update()
     {
+        energyslider.maxValue = MaxEnergy;
         energyslider.value = Energy;
         this.GetComponent<PlayerCharacter>().energy = Energy;
         this.GetComponent<PlayerCharacter>().maxenergy = MaxEnergy;

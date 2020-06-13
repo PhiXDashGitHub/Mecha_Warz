@@ -29,11 +29,28 @@ public class Enemy : MonoBehaviour
     {
         shooting = false;
         health = Maxhealth;
-        player = FindObjectOfType<PlayerMovement>().transform;
+
+        StartCoroutine(ActivateAI());
+    }
+
+    IEnumerator ActivateAI()
+    {
+        new WaitForSeconds(0.1f);
+        if (agent != null)
+        {
+            agent.enabled = true;
+        }
+        yield return null;
     }
 
     void Update()
     {
+        if (player == null)
+        {
+            player = FindObjectOfType<PlayerMovement>().transform;
+            return;
+        }
+
         //Check Enemy Type
         if (type == EnemyType.Stationary)
         {

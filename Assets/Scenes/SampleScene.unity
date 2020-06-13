@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -165,11 +166,9 @@ PositionConstraint:
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
-  m_IsContraintActive: 1
+  m_IsContraintActive: 0
   m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
+  m_Sources: []
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -258,6 +257,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554d27deb667b1c4380f8e855f14c105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &544026000
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +536,10 @@ MonoBehaviour:
   - {fileID: 855940507506028756, guid: 16dd95a7450ecac4185ce5ef025fa06b, type: 3}
   - {fileID: 855940507506028756, guid: e00191c88f6cddd45b1c36b08b6b526b, type: 3}
   otherTownPos: []
+  mechTypes:
+  - {fileID: 7971563455227698902, guid: cedf9d4425804a645bb8330d7aa7e9d4, type: 3}
+  - {fileID: 7377212901061869074, guid: d092fdabb2dc9fc4c90489dd4e7fdc32, type: 3}
+  - {fileID: 7971563455227698902, guid: 2755977875ca8fa46b8ec9f1cdbbbc1c, type: 3}
   noiseScale: 184
   noiseWeight: 0.779
   noiseContrast: 0.286

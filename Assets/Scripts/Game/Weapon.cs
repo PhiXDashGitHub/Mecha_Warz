@@ -19,7 +19,7 @@ public class Weapon : MonoBehaviour
     {
         if (ismeshweapon)
         {
-            if (other.gameObject.GetComponent<Enemy>())
+            if (other.gameObject.GetComponent<Enemy>() && !CompareTag("Weapon"))
             {
                 other.gameObject.GetComponent<Enemy>().Takedamage(Damage);
             }
@@ -28,7 +28,7 @@ public class Weapon : MonoBehaviour
 
     public void OnParticleCollision(GameObject other)
     {
-        if (other.gameObject.GetComponent<Enemy>())
+        if (other.gameObject.GetComponent<Enemy>() && !CompareTag("Weapon"))
         {
             other.gameObject.GetComponent<Enemy>().Takedamage(Damage);
         }

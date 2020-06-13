@@ -1839,7 +1839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 425ff881ddee447449be3673140538ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToRotate: {fileID: 5420448374697675010}
+  objectToRotate: {fileID: 6647094638521172658}
   laserObject: {fileID: 6716722349938711241, guid: 2f150887a36483841a0724cf401f4158,
     type: 3}
   deathParticles: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}

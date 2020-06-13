@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -20,6 +21,9 @@ public class MapGenerator : MonoBehaviour
     public GameObject[] grassTiles;
 
     public List<Vector3> otherTownPos;
+
+    [Header("Player")]
+    public GameObject[] mechTypes;
 
     [Header("Noise")]
     [Range(10, 1000)]
@@ -130,7 +134,21 @@ public class MapGenerator : MonoBehaviour
         newTown2.transform.position = Vector3.zero;
 
         //Spawn Player
+        string className = PlayerPrefs.GetString("CharClass"+ PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")]);
+        GameObject mech = null;
 
+        for (int i = 0; i < mechTypes.Length; i++)
+        {
+            Debug.Log(mechTypes[i].name);
+            Debug.Log("Player" + className);
+            if (mechTypes[i].name == "Player" + className)
+            {
+                mech = mechTypes[i];
+                break;
+            }
+        }
+
+        Instantiate(mech);
     }
 
     Texture2D GenerateNoiseTexture(int width, int height)

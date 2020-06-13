@@ -12,7 +12,7 @@ public class SelectCharacter : MonoBehaviour
     private int index;
     public int CharSex;
     
-    //Class Names: Basic , Melee , Ranged , Bio , Hybrid , Support
+    //Class Names: Basic , Melee , Range , Bio , Hybrid , Support
     private string Class = "Basic";
 
     public GameObject[] MechDisplay;

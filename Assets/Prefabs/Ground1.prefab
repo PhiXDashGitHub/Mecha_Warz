@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 73202136711527580}
   - component: {fileID: 73202136711527581}
   - component: {fileID: 73202136711527552}
-  - component: {fileID: 73202136711527578}
   - component: {fileID: 868079119627161662}
   m_Layer: 0
   m_Name: Enemy
@@ -67,35 +66,13 @@ MonoBehaviour:
   laserObject: {fileID: 6716722349938711241, guid: 2f150887a36483841a0724cf401f4158,
     type: 3}
   deathParticles: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
-  agent: {fileID: 73202136711527578}
+  agent: {fileID: 0}
   type: 1
   Maxhealth: 200
   range: 10
   shootTime: 1
   angularSpeed: 2
   magicForPlayer: 5600
---- !u!195 &73202136711527578
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73202136711527555}
-  m_Enabled: 0
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!65 &868079119627161662
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3001,7 +2978,6 @@ GameObject:
   - component: {fileID: 9094523938386535030}
   - component: {fileID: 7859980903880015587}
   - component: {fileID: 4218871863377721326}
-  - component: {fileID: 4523963133314503068}
   - component: {fileID: 7779193113571532796}
   m_Layer: 0
   m_Name: Enemy (1)
@@ -3057,35 +3033,13 @@ MonoBehaviour:
   laserObject: {fileID: 6716722349938711241, guid: 2f150887a36483841a0724cf401f4158,
     type: 3}
   deathParticles: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
-  agent: {fileID: 4523963133314503068}
+  agent: {fileID: 0}
   type: 1
   Maxhealth: 200
   range: 10
   shootTime: 1
   angularSpeed: 2
   magicForPlayer: 5600
---- !u!195 &4523963133314503068
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4036119015268354767}
-  m_Enabled: 0
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!65 &7779193113571532796
 BoxCollider:
   m_ObjectHideFlags: 0

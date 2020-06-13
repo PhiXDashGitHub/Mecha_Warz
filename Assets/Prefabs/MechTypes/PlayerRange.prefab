@@ -6745,8 +6745,8 @@ MonoBehaviour:
   maxShield: 0
   maxToughness: 0
   maxEnlightenment: 0
-  maxenergy: 20
-  energy: 20
+  maxenergy: 100
+  energy: 100
   fireResistance: 0
   waterResistance: 0
   iceResistance: 0
@@ -6809,7 +6809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occludeRange: 100
-  map: {fileID: 0}
 --- !u!54 &7971563455227698900
 Rigidbody:
   m_ObjectHideFlags: 0

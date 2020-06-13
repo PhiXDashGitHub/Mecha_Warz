@@ -5489,7 +5489,7 @@ MonoBehaviour:
   level: 1
   progressionLevel: 0
   maxHealthbuff: 0
-  magicToLevelUp: 0
+  magicToLevelUp: 5000
   maxMagicShieldbuff: 0
   maxShieldbuff: 0
   maxToughnessbuff: 0
@@ -5507,12 +5507,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  maxMagicShield: 0
+  maxMagicShield: 100
   maxShield: 0
   maxToughness: 0
   maxEnlightenment: 0
-  maxenergy: 0
-  energy: 0
+  maxenergy: 100
+  energy: 100
   fireResistance: 0
   waterResistance: 0
   iceResistance: 0
@@ -5536,9 +5536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 7377212901061869072}
-  transformWalkSpeed: 0
-  transformRunSpeed: 0
-  transformLerpTime: 0
+  transformWalkSpeed: 5
+  transformRunSpeed: 10
+  transformLerpTime: 2
   angularSpeed: 3
   transitionSpeed: 3
   animator: {fileID: 3919073339715012587}

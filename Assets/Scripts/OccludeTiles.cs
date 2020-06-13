@@ -5,7 +5,12 @@ using UnityEngine;
 public class OccludeTiles : MonoBehaviour
 {
     public float occludeRange;
-    public Transform map;
+    Transform map;
+
+    void Start()
+    {
+        map = FindObjectOfType<MapGenerator>().transform;
+    }
 
     void Update()
     {
