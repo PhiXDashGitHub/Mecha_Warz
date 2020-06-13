@@ -128,6 +128,9 @@ public class MapGenerator : MonoBehaviour
 
         GameObject newTown2 = Instantiate(mainTown, transform);
         newTown2.transform.position = Vector3.zero;
+
+        //Spawn Player
+
     }
 
     Texture2D GenerateNoiseTexture(int width, int height)
