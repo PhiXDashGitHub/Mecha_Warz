@@ -45,5 +45,13 @@ public class PlayerMovement : MonoBehaviour
 
             rigidbody.MovePosition(transform.position + transform.forward * transformSpeed * Time.fixedDeltaTime);
         }
+
+        //Clamp Player Position
+        Vector3 pos = transform.position;
+        Vector2 mapSize = FindObjectOfType<MapGenerator>().mapSize;
+        float mapOffset = 30;
+        pos.x = Mathf.Clamp(pos.x, -mapSize.x - mapOffset, mapSize.x + mapOffset);
+        pos.z = Mathf.Clamp(pos.z, -mapSize.y - mapOffset, mapSize.y + mapOffset);
+        transform.position = pos;
     }
 }

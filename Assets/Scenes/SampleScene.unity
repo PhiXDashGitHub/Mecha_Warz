@@ -566,6 +566,7 @@ MonoBehaviour:
   mapSize: {x: 1000, y: 500}
   tileSize: 100
   townDistance: 200
+  fakeGround: {fileID: 0}
   mainTown: {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d,
     type: 3}
   otherTowns:
