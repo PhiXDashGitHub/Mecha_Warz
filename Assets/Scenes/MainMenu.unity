@@ -20968,6 +20968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pausemenu: {fileID: 328760070}
+  DeathScreen: {fileID: 0}
 --- !u!1 &1623858084
 GameObject:
   m_ObjectHideFlags: 3

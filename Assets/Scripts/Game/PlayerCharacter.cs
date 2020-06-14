@@ -32,7 +32,7 @@ public class PlayerCharacter : MonoBehaviour
     //UI
     public Slider healthSlider;
     public Slider magicShieldSlider;
-
+    public GameObject DeathScreen;
     void Awake()
     {
         gameObject.name = PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")].ToString();
@@ -112,6 +112,16 @@ public class PlayerCharacter : MonoBehaviour
     {
         GetComponent<PlayerMovement>().enabled = false;
         FindObjectOfType<TurretControl>().enabled = false;
+        DeathScreen.SetActive(true);
+    }
+
+    public void ReSpawn()
+    {
+        GetComponent<PlayerMovement>().enabled = true;
+        FindObjectOfType<TurretControl>().enabled = true;
+        health = maxHealth;
+        maxShield = maxMagicShield;
+        energy = maxenergy;
     }
 
     IEnumerator RegenerateHealth()
