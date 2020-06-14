@@ -104,7 +104,10 @@ public class PlayerCharacter : MonoBehaviour
 
         health -= actualDamage;
     }
-
+    public void GetHealed(float heal)
+    {
+        health += heal;
+    }
     public void Dead()
     {
         GetComponent<PlayerMovement>().enabled = false;

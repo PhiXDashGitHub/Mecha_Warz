@@ -100,7 +100,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 7f51cf569977a0046a3812f54942ef74,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -587,6 +587,7 @@ MonoBehaviour:
   - {fileID: 7971563455227698902, guid: 2755977875ca8fa46b8ec9f1cdbbbc1c, type: 3}
   - {fileID: 7971563455227698902, guid: 825dcb4bc53e5f749b133ff74cc147b0, type: 3}
   - {fileID: 7971563455227698902, guid: a2a8157b37b2c1341b8e9e5fc3cc5111, type: 3}
+  - {fileID: 7971563455227698902, guid: 6923ea796ea2f0c479a0a4281dd7ecae, type: 3}
   noiseScale: 184
   noiseWeight: 0.779
   noiseContrast: 0.286
