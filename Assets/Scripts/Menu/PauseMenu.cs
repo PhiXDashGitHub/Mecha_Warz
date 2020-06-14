@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject Pausemenu;
     FullScreenMode fullscreenmode = FullScreenMode.ExclusiveFullScreen;
+    public GameObject DeathScreen;
 
     void Update()
     {
@@ -52,5 +53,15 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void RestartGame()
+    {
+        GameObject.FindGameObjectWithTag("Player").transform.position = Vector3.zero;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCharacter>().ReSpawn();
+        DeathScreen.SetActive(false);
     }
 }
