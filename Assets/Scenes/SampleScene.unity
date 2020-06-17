@@ -566,7 +566,6 @@ MonoBehaviour:
   mapSize: {x: 1000, y: 500}
   tileSize: 100
   townDistance: 200
-  fakeGround: {fileID: 0}
   mainTown: {fileID: 4686997483913580502, guid: 2bf4767c248e7c44fb0bccd377612e0d,
     type: 3}
   otherTowns:
@@ -585,7 +584,7 @@ MonoBehaviour:
   mechTypes:
   - {fileID: 7971563455227698902, guid: cedf9d4425804a645bb8330d7aa7e9d4, type: 3}
   - {fileID: 7377212901061869074, guid: d092fdabb2dc9fc4c90489dd4e7fdc32, type: 3}
-  - {fileID: 7971563455227698902, guid: 2755977875ca8fa46b8ec9f1cdbbbc1c, type: 3}
+  - {fileID: 7971563455227698902, guid: a319b1ae16008d5408994c7ffeb4e7c0, type: 3}
   - {fileID: 7971563455227698902, guid: 825dcb4bc53e5f749b133ff74cc147b0, type: 3}
   - {fileID: 7971563455227698902, guid: a2a8157b37b2c1341b8e9e5fc3cc5111, type: 3}
   - {fileID: 7971563455227698902, guid: 6923ea796ea2f0c479a0a4281dd7ecae, type: 3}
