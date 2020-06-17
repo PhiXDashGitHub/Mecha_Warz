@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Enemy : MonoBehaviour
     public GameObject laserObject;
     public GameObject deathParticles;
     public NavMeshAgent agent;
+    public Slider healthBar;
 
     public enum EnemyType { Walking, Stationary, Boss }
     public EnemyType type;
@@ -45,6 +47,10 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        //Set UI
+        healthBar.maxValue = Maxhealth;
+        healthBar.value = health;
+
         if (player == null)
         {
             player = FindObjectOfType<PlayerMovement>().transform;
