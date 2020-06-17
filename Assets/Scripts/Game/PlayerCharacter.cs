@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,6 +34,10 @@ public class PlayerCharacter : MonoBehaviour
     public Slider healthSlider;
     public Slider magicShieldSlider;
     public GameObject DeathScreen;
+    public TextMeshProUGUI healthText;
+    public TextMeshProUGUI energyText;
+    public TextMeshProUGUI magicShieldText;
+
     void Awake()
     {
         gameObject.name = PlayerPrefsX.GetStringArray("CharNames")[PlayerPrefs.GetInt("SaveState")].ToString();
@@ -65,6 +70,7 @@ public class PlayerCharacter : MonoBehaviour
 
         healthSlider.maxValue = maxHealth;
         magicShieldSlider.maxValue = maxMagicShield;
+
         StartCoroutine(Autosave());
     }
 
@@ -83,6 +89,9 @@ public class PlayerCharacter : MonoBehaviour
         healthSlider.value = health;
         magicShieldSlider.maxValue = maxMagicShield;
         magicShieldSlider.value = magicShield;
+        healthText.text = health.ToString("000") + "/" + maxHealth.ToString("000");
+        energyText.text = energy.ToString("000") + "/" + maxenergy.ToString("000");
+        magicShieldText.text = magicShield.ToString("000") + "/" + maxMagicShield.ToString("000");
 
         if (health <= 0)
         {
