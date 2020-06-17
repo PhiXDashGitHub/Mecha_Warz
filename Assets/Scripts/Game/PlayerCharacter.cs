@@ -99,12 +99,14 @@ public class PlayerCharacter : MonoBehaviour
         }
 
     }
+
     public IEnumerator Autosave()
     {
         SaveVariables();
         yield return new WaitForSeconds(3);
         StartCoroutine(Autosave());
     }
+
     public void GetHurt(float damage)
     {
         float actualDamage = damage * (1.5f - magicShield / 100);
@@ -112,11 +114,15 @@ public class PlayerCharacter : MonoBehaviour
         magicShield -= damage;
 
         health -= actualDamage;
+        FindObjectOfType<PlayerEventManager>().AddEvent("-" + damage, Color.red);
     }
+
     public void GetHealed(float heal)
     {
         health += heal;
+        FindObjectOfType<PlayerEventManager>().AddEvent("+" + heal, Color.green);
     }
+
     public void Dead()
     {
         GetComponent<PlayerMovement>().enabled = false;

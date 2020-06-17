@@ -120,6 +120,7 @@ public class PlayerStats : MonoBehaviour
     public void AddMagic(int amount)
     {
         magic += amount;
+        FindObjectOfType<PlayerEventManager>().AddEvent("+" + amount, Color.magenta);
     }
 
     public void SaveVariables()
