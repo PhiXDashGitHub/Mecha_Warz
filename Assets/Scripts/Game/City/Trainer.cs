@@ -37,17 +37,18 @@ public class Trainer : MonoBehaviour
 
     public void NewPerc(int index)
     {
-        if(Player.GetComponent<PlayerStats>().progressionLevel >= 1 || slot < 1)
+        if(Player.GetComponent<PlayerStats>().progressionLevel >= 1 && slot < 1)
         {
             slot++;
             AddFirstPerc(index);
         }
-        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 2 || slot < 2)
+        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 2 && slot < 2)
         {
+
             slot++;
             AddSecPerc(index);
         }
-        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 3 || slot < 3)
+        else if (Player.GetComponent<PlayerStats>().progressionLevel >= 3 && slot < 3)
         {
             slot++;
             AddThrPerc(index);

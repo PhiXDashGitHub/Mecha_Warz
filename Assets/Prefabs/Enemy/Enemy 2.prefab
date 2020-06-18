@@ -1603,7 +1603,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 525dc6a1bbb1c8b4d81b4bbb7850464a, type: 2}
+  - {fileID: 2100000, guid: 9f9bcb6e80a96c547a6c77f96e05fde8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2208,7 +2208,7 @@ GameObject:
   - component: {fileID: 6647094638521172660}
   - component: {fileID: 5852182471730769424}
   m_Layer: 0
-  m_Name: Enemy 1
+  m_Name: Enemy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2266,10 +2266,10 @@ MonoBehaviour:
   healthBar: {fileID: 6420564765684586049}
   type: 0
   Maxhealth: 200
-  range: 10
-  shootTime: 1
-  angularSpeed: 2
-  magicForPlayer: 1000
+  range: 20
+  shootTime: 0.5
+  angularSpeed: 1
+  magicForPlayer: 1200
 --- !u!195 &6647094638521172660
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2277,7 +2277,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6647094638521172653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5

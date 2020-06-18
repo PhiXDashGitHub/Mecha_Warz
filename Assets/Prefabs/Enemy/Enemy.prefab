@@ -2028,7 +2028,7 @@ MonoBehaviour:
   healthBar: {fileID: 6864334007763268601}
   type: 1
   Maxhealth: 200
-  range: 30
+  range: 40
   shootTime: 1
   angularSpeed: 2
   magicForPlayer: 70000
@@ -2039,7 +2039,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6647094638521172653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
