@@ -1749,7 +1749,6 @@ GameObject:
   - component: {fileID: 314934573830079642}
   - component: {fileID: 314934573829309626}
   - component: {fileID: 314934573828179578}
-  - component: {fileID: 314934573823126394}
   - component: {fileID: 1399504692107963084}
   m_Layer: 0
   m_Name: CrossX
@@ -1821,25 +1820,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &314934573823126394
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 314934573830379706}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 38905eedc2fe93347831d9ed264a7912, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1399504692107963084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1868,7 +1848,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: d9adfd48d6876f24985233b673b24a15, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 6cb503cc4081f734ebadf9a8e5a48d35, type: 2}
 --- !u!1 &314934573835651779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7887,7 +7867,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 203aa6b2a94237f45a236a98f6ffea79, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: cdde3f603609dcf45b06b4bfb9405337, type: 2}
 --- !u!1 &314934574449014782
 GameObject:
   m_ObjectHideFlags: 0
@@ -15588,7 +15568,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 5acbae1c349bb864aa2d92cc2ab57b8a, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: eb5a054a976964f45885057defdfdfd4, type: 2}
 --- !u!1 &314934575190652473
 GameObject:
   m_ObjectHideFlags: 0
@@ -19175,7 +19155,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 638079cd5ba47694abf5f1bb8bc8c18d, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 31dbde44b10241149bcc35f6ba2faad9, type: 2}
 --- !u!1 &314934575580097993
 GameObject:
   m_ObjectHideFlags: 0
@@ -30728,7 +30708,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 676796f1351b197448c753b2afaafa19, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: bfe15fcdec4832c43bf1930f4c2c6d80, type: 2}
 --- !u!1 &5969197029974344779
 GameObject:
   m_ObjectHideFlags: 0
@@ -33529,7 +33509,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: dc1b12810703da441aae1e782d028c99, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: dc57875e332f7134396d89aefc02e8a4, type: 2}
 --- !u!1 &6946164557834913381
 GameObject:
   m_ObjectHideFlags: 0
